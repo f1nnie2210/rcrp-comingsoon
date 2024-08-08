@@ -10,7 +10,7 @@ const popular_data = [
 		buttonInfo: [
 			{
 				style: "minimal",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -27,7 +27,7 @@ const popular_data = [
 		buttonInfo: [
 			{
 				style: "minimal",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "",
 			},
@@ -44,7 +44,7 @@ const popular_data = [
 		buttonInfo: [
 			{
 				style: "minimal",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "",
 			},
@@ -61,7 +61,7 @@ const popular_data = [
 		buttonInfo: [
 			{
 				style: "minimal",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -78,7 +78,7 @@ const popular_data = [
 		buttonInfo: [
 			{
 				style: "minimal",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "",
 			},
@@ -95,7 +95,7 @@ const popular_data = [
 		buttonInfo: [
 			{
 				style: "minimal",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "",
 			},
@@ -112,7 +112,7 @@ const popular_data = [
 		buttonInfo: [
 			{
 				style: "minimal",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -129,7 +129,7 @@ const popular_data = [
 		buttonInfo: [
 			{
 				style: "minimal",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "",
 			},
@@ -146,7 +146,7 @@ const popular_data = [
 		buttonInfo: [
 			{
 				style: "minimal",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "",
 			},

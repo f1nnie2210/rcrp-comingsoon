@@ -44,7 +44,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -140,7 +140,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -236,7 +236,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -325,7 +325,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "warning",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -421,7 +421,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -517,7 +517,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -613,7 +613,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -702,7 +702,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "warning",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -798,7 +798,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -894,7 +894,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -990,7 +990,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -1079,7 +1079,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "warning",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -1175,7 +1175,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -1271,7 +1271,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -1367,7 +1367,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "primary",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},
@@ -1456,7 +1456,7 @@ const live_actions = [
 		buttonInfo: [
 			{
 				style: "warning",
-				text: "Place Bid",
+				text: "Mua Ngay",
 				url: "#",
 				icon: "/assets/img/core-img/fire.png",
 			},

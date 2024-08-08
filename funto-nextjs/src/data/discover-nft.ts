@@ -44,15 +44,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "125",
@@ -153,15 +153,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "74",
@@ -262,15 +262,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "63",
@@ -371,15 +371,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "741",
@@ -480,15 +480,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "221",
@@ -589,15 +589,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "121",
@@ -698,15 +698,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "321",
@@ -807,15 +807,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "11",
@@ -916,15 +916,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "99",
@@ -1025,15 +1025,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "142",
@@ -1134,15 +1134,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "324",
@@ -1243,15 +1243,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "3",
@@ -1352,15 +1352,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "125",
@@ -1461,15 +1461,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "74",
@@ -1570,15 +1570,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "63",
@@ -1679,15 +1679,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "741",
@@ -1788,15 +1788,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "221",
@@ -1897,15 +1897,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "121",
@@ -2006,15 +2006,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "321",
@@ -2115,15 +2115,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "11",
@@ -2224,15 +2224,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "99",
@@ -2333,15 +2333,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "142",
@@ -2442,15 +2442,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "324",
@@ -2551,15 +2551,15 @@ const discover_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "3",

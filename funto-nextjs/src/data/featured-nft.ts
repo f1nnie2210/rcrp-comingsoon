@@ -1,10 +1,10 @@
 const featured_data = [
 	{
 		id: 1,
-		title: "Cowboy Riding Bull Nature",
+		title: "Cheetah",
 		image: "/assets/img/bg-img/40.jpg",
-		currentPrice: "0.061 ETH",
-		priceText: "Current Bid",
+		currentPrice: "200 RC",
+		priceText: "Giá hiện tại",
 		badgeVisibility: "",
 		badgeColor: "primary",
 		badgeText: "Featured",
@@ -27,31 +27,31 @@ const featured_data = [
 				dropdownItemURL: "#",
 			},
 		],
-		topLevelText: "Hightest bid 0.061 ETH",
-		topLevelIcon: "bi-arrow-up",
-		authorName: "rk_theme",
-		authorAvater: "/assets/img/bg-img/u1.jpg",
+		// topLevelText: "Hightest bid 0.061 ETH",
+		// topLevelIcon: "bi-arrow-up",
+		authorName: "Vehicle",
+		// authorAvater: "/assets/img/bg-img/u1.jpg",
 		authorVerified: "true",
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+				rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "11",
 		viewsNow: "2007",
 		shortDesc: [
 			{
-				heading: "Short Description",
-				body: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?",
+				heading: "Cheetah",
+				body: "Tiêu Hao 0.095 l/km, Diesel Petrol, Dung Tích Bình Xăng 404L",
 			},
 		],
 		tabVisibility: "",
@@ -128,15 +128,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "29",
@@ -221,15 +221,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "89",
@@ -307,15 +307,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "49",
@@ -400,15 +400,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "11",
@@ -493,15 +493,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "29",
@@ -586,15 +586,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "89",
@@ -672,15 +672,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "49",
@@ -765,15 +765,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "11",
@@ -858,15 +858,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "29",
@@ -951,15 +951,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "89",
@@ -1037,15 +1037,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "49",
@@ -1130,15 +1130,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "11",
@@ -1223,15 +1223,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "29",
@@ -1316,15 +1316,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "89",
@@ -1402,15 +1402,15 @@ const featured_data = [
 		buttonGroup: [
 			{
 				leftButtonStyle: "primary",
-				leftButtonText: "Place Bid",
+				leftButtonText: "Mua Ngay",
 				leftButtonURL: "#",
 				leftButtonIcon: "",
 			},
 			{
 				rightButtonStyle: "minimal",
-				rightButtonText: "Activity",
+rightButtonText: "Còn Hàng",
 				rightButtonURL: "/activity",
-				rightButtonIcon: "bi-activity",
+				rightButtonIcon: "bi-box-seam",
 			},
 		],
 		wishlistCount: "49",
