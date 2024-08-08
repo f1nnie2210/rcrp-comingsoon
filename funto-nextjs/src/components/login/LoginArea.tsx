@@ -17,12 +17,12 @@ const LoginArea = () => {
 						<div className="col-12 col-md-6 col-xl-5">
 							<div className="register-card">
 								<h2>Welcome Back!</h2>
-								<p>
+								{/* <p>
 									Didnt have an account?
 									<Link className="ms-1 hover-primary" href="/register">
 										Register now!
 									</Link>
-								</p>
+								</p> */}
 
 								<div className="register-form mt-5">
 									<form onSubmit={(e) => e.preventDefault()}>
@@ -30,7 +30,7 @@ const LoginArea = () => {
 											<input
 												className="form-control"
 												type="email"
-												placeholder="Email Address"
+												placeholder="Ho_Ten"
 												required
 											/>
 										</div>
@@ -40,18 +40,18 @@ const LoginArea = () => {
 												htmlFor="registerPassword"
 												onClick={togglePasswordVisibility}
 											> 
-												{passwordVisible ? "Hide" : "Show"}
+												{passwordVisible ? "Ẩn" : "Hiện"}
 											</label>
 											<input
 												className="form-control"
 												id="registerPassword"
 												type={passwordVisible ? 'text' : 'password'}
-												placeholder="Password"
+												placeholder="Mật khẩu"
 												required
 											/>
 										</div>
 										<button className="btn btn-success w-100" type="submit">
-											Log In
+											Đăng Nhập
 										</button>
 									</form>
 									<div className="login-meta-data d-flex align-items-center justify-content-between">
@@ -64,14 +64,14 @@ const LoginArea = () => {
 												checked
 											/>
 											<label className="form-check-label" htmlFor="rememberMe">
-												Keep me logged in
+												Lưu Đăng Nhập
 											</label>
 										</div>
 										<Link
 											className="forgot-password mt-4 text-primary fz-16"
 											href="/forget-password"
 										>
-											Forgot Password?
+											Quên mật khẩu?
 										</Link>
 									</div>
 								</div>
