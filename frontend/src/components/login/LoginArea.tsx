@@ -1,13 +1,37 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 const LoginArea = () => {
 	const [passwordVisible, setPasswordVisible] = useState(false);
-
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const router = useRouter();
+	
 	const togglePasswordVisibility = () => {
 		setPasswordVisible(!passwordVisible);
 	};
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:5000/api/auth/login', {
+                Username: username,
+                Password: password,
+            }, { withCredentials: true });
+            if (response.data.token) {
+                localStorage.setItem('token', response.data.token);
+				localStorage.setItem('username', username); 
+                router.push('/');
+            }
+        } catch (err) {
+            setError('Invalid username or password.');
+        }
+    };
+
 
 	return (
 		<>
@@ -25,12 +49,16 @@ const LoginArea = () => {
 								</p> */}
 
 								<div className="register-form mt-5">
-									<form onSubmit={(e) => e.preventDefault()}>
+									<form onSubmit={handleSubmit}>
 										<div className="form-group mb-4">
 											<input
 												className="form-control"
-												type="email"
-												placeholder="Ho_Ten"
+												type="text"
+												placeholder="Username"
+												value={username}
+												onChange={(e) =>
+                                                    setUsername(e.target.value)
+                                                }
 												required
 											/>
 										</div>
@@ -47,9 +75,14 @@ const LoginArea = () => {
 												id="registerPassword"
 												type={passwordVisible ? 'text' : 'password'}
 												placeholder="Mật khẩu"
+												value={password}
+												onChange={(e) =>
+                                                    setPassword(e.target.value)
+                                                }
 												required
 											/>
 										</div>
+										{error && <p style={{ color: 'red' }}>{error}</p>}
 										<button className="btn btn-success w-100" type="submit">
 											Đăng Nhập
 										</button>
@@ -61,7 +94,6 @@ const LoginArea = () => {
 												id="rememberMe"
 												type="checkbox"
 												value=""
-												checked
 											/>
 											<label className="form-check-label" htmlFor="rememberMe">
 												Lưu Đăng Nhập
