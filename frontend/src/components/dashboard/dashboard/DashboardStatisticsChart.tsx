@@ -1,34 +1,67 @@
-
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 // import Chart from 'react-apexcharts';
-import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic'
 
-const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
-
-
+const Chart = dynamic(() => import('react-apexcharts'), { ssr: false })
 
 const DashboardStatisticsChart = () => {
-
   const [chartData] = useState({
-    series: [{
-      name: 'Visitors',
-      data: [364, 487, 579, 632, 654, 423, 487, 645, 658, 589, 635, 702, 585, 670, 705, 605, 852, 579, 632, 654, 547, 745, 645, 658, 589, 647, 478, 485, 547, 631]
-    }],
+    series: [
+      {
+        name: 'Visitors',
+        data: [
+          364, 487, 579, 632, 654, 423, 487, 645, 658, 589, 635, 702, 585, 670,
+          705, 605, 852, 579, 632, 654, 547, 745, 645, 658, 589, 647, 478, 485,
+          547, 631,
+        ],
+      },
+    ],
     options: {
       chart: {
         id: 'area-datetime',
         zoom: {
-          autoScaleYaxis: true
+          autoScaleYaxis: true,
         },
         toolbar: {
-          show: false
-        }
+          show: false,
+        },
       },
-      labels: ['1 Jan 2022', '2 Jan 2022', '3 Jan 2022', '4 Jan 2022', '5 Jan 2022', '6 Jan 2022', '7 Jan 2022', '8 Jan 2022', '9 Jan 2022', '10 Jan 2022', '11 Jan 2022', '12 Jan 2022', '13 Jan 2022', '14 Jan 2022', '15 Jan 2022', '16 Jan 2022', '17 Jan 2022', '18 Jan 2022', '19 Jan 2022', '20 Jan 2022', '21 Jan 2022', '22 Jan 2022', '23 Jan 2022', '24 Jan 2022', '25 Jan 2022', '26 Jan 2022', '27 Jan 2022', '28 Jan 2022', '29 Jan 2022', '30 Jan 2022'],
+      labels: [
+        '1 Jan 2022',
+        '2 Jan 2022',
+        '3 Jan 2022',
+        '4 Jan 2022',
+        '5 Jan 2022',
+        '6 Jan 2022',
+        '7 Jan 2022',
+        '8 Jan 2022',
+        '9 Jan 2022',
+        '10 Jan 2022',
+        '11 Jan 2022',
+        '12 Jan 2022',
+        '13 Jan 2022',
+        '14 Jan 2022',
+        '15 Jan 2022',
+        '16 Jan 2022',
+        '17 Jan 2022',
+        '18 Jan 2022',
+        '19 Jan 2022',
+        '20 Jan 2022',
+        '21 Jan 2022',
+        '22 Jan 2022',
+        '23 Jan 2022',
+        '24 Jan 2022',
+        '25 Jan 2022',
+        '26 Jan 2022',
+        '27 Jan 2022',
+        '28 Jan 2022',
+        '29 Jan 2022',
+        '30 Jan 2022',
+      ],
       dataLabels: {
-        enabled: false
+        enabled: false,
       },
       markers: {
         size: 0,
@@ -42,7 +75,7 @@ const DashboardStatisticsChart = () => {
       yaxis: {
         labels: {
           style: {
-            colors: ["#8480ae"],
+            colors: ['#8480ae'],
             fontFamily: 'DM Sans, sans-serif',
           },
         },
@@ -56,11 +89,11 @@ const DashboardStatisticsChart = () => {
       tooltip: {
         theme: 'dark',
         x: {
-          show: false
+          show: false,
         },
         style: {
           fontSize: '12px',
-          fontFamily: 'DM Sans, sans-serif'
+          fontFamily: 'DM Sans, sans-serif',
         },
       },
       fill: {
@@ -69,12 +102,11 @@ const DashboardStatisticsChart = () => {
           shadeIntensity: 1,
           opacityFrom: 0.6,
           opacityTo: 1,
-          stops: [0, 100]
-        }
-      }
-    }
-  });
-
+          stops: [0, 100],
+        },
+      },
+    },
+  })
 
   return (
     <>
@@ -94,10 +126,8 @@ const DashboardStatisticsChart = () => {
           </div>
         </div>
       </div>
-
-
     </>
-  );
-};
+  )
+}
 
-export default DashboardStatisticsChart;
+export default DashboardStatisticsChart

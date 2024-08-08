@@ -1,36 +1,30 @@
-
 'use client'
 
-import HeaderOne from '@/layouts/headers/HeaderOne';
-import React from 'react';
-import Breadcrumb from '../common/Breadcrumb';
-import Divider from '../common/Divider';
-import ItemDetailsArea from './ItemDetailsArea';
-import FooterOne from '@/layouts/footers/FooterOne';
-import RelatedProjects from '../common/RelatedProjects';
-
- 
+import HeaderOne from '@/layouts/headers/HeaderOne'
+import React from 'react'
+import Breadcrumb from '../common/Breadcrumb'
+import Divider from '../common/Divider'
+import ItemDetailsArea from './ItemDetailsArea'
+import FooterOne from '@/layouts/footers/FooterOne'
+import RelatedProjects from '../common/RelatedProjects'
 
 const ItemDetails = () => {
-
-  if (typeof window !== "undefined") {
-    require("bootstrap/dist/js/bootstrap");
+  if (typeof window !== 'undefined') {
+    require('bootstrap/dist/js/bootstrap')
   }
-
-  
 
   return (
     <>
-    <HeaderOne />
-    <Breadcrumb title="Item Details" subtitle="Item Details" />
-    <Divider />
-    <ItemDetailsArea />
-    <Divider />
-    <RelatedProjects />
-    <Divider /> 
-    <FooterOne />      
+      <HeaderOne />
+      <Breadcrumb title="Item Details" subtitle="Item Details" />
+      <Divider />
+      <ItemDetailsArea />
+      <Divider />
+      <RelatedProjects />
+      <Divider />
+      <FooterOne />
     </>
-  );
-};
+  )
+}
 
-export default ItemDetails;
+export default ItemDetails

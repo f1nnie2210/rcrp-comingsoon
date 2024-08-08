@@ -1,16 +1,16 @@
-import ConnetWallet from "@/components/connet-wallet";
-import React from "react";
+import ConnetWallet from '@/components/connet-wallet'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Connet Wallet - Openmp Việt Nam",
-};
+  title: 'RC:RP Connet Wallet - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<ConnetWallet />
-		</>
-	);
-};
+  return (
+    <>
+      <ConnetWallet />
+    </>
+  )
+}
 
-export default index;
+export default index

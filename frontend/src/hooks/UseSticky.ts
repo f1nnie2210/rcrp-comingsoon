@@ -1,38 +1,32 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 interface StickyState {
-  sticky: boolean;
+  sticky: boolean
 }
 
 const UseSticky = (): StickyState => {
-
-
-  const [sticky, setSticky] = useState(false);
+  const [sticky, setSticky] = useState(false)
 
   const stickyHeader = (): void => {
     if (window.scrollY > 150) {
-      setSticky(true);
+      setSticky(true)
     } else {
-      setSticky(false);
+      setSticky(false)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", stickyHeader);
+    window.addEventListener('scroll', stickyHeader)
 
     return (): void => {
-      window.removeEventListener("scroll", stickyHeader);
-    };
-  }, []);
-
-
- 
-
+      window.removeEventListener('scroll', stickyHeader)
+    }
+  }, [])
 
   return {
     sticky,
-  };
-};
+  }
+}
 
-export default UseSticky;
+export default UseSticky

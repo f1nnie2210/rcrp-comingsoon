@@ -1,49 +1,66 @@
-
-
 'use client'
 
-import collection_data from '@/data/collection';
-import Link from 'next/link';
-import React, { useState } from 'react';
+import collection_data from '@/data/collection'
+import Link from 'next/link'
+import React, { useState } from 'react'
 
 const MyCollectionArea = () => {
-
-  const [count, setCount] = useState(6);
-  const [noMorePost, setNoMorePost] = useState(false);
-  const countSlice = collection_data.slice(0, count);
+  const [count, setCount] = useState(6)
+  const [noMorePost, setNoMorePost] = useState(false)
+  const countSlice = collection_data.slice(0, count)
 
   const handleLoadMore = () => {
-    setCount(count + 3);
+    setCount(count + 3)
     if (count >= collection_data.length) {
-      setNoMorePost(true);
+      setNoMorePost(true)
     }
   }
 
   return (
     <>
       <div className="create-new-button">
-        <Link className="shadow-lg btn btn-warning" href="/create-new"
+        <Link
+          className="shadow-lg btn btn-warning"
+          href="/create-new"
           data-bs-toggle="tooltip"
-          data-bs-placement="left" title="Create New NFT"><i className="fz-18 bi bi-plus-lg"></i>
+          data-bs-placement="left"
+          title="Create New NFT"
+        >
+          <i className="fz-18 bi bi-plus-lg"></i>
         </Link>
       </div>
       <div className="admin-wrapper">
         <div className="container">
           <h5 className="mb-3">Your collections</h5>
           <div className="row g-4">
-
             {countSlice.map((elem, index) => (
-              <div className="col-12 col-md-6 col-xxl-4" key={index} >
+              <div className="col-12 col-md-6 col-xxl-4" key={index}>
                 <div className="catagory-card card shadow-sm">
                   <div className="card-body">
                     <div className="row gx-1">
                       <div className="col-6">
-                        <img className="rounded" src={elem.firstImage} alt={elem.name} />
-                        <img className="rounded" src={elem.thirdImage} alt={elem.name} />
+                        <img
+                          className="rounded"
+                          src={elem.firstImage}
+                          alt={elem.name}
+                        />
+                        <img
+                          className="rounded"
+                          src={elem.thirdImage}
+                          alt={elem.name}
+                        />
                       </div>
                       <div className="col-6">
-                        <img className="rounded" src={elem.secondImage} alt={elem.name} />
-                        <img className="rounded" src={elem.fourthImage} alt={elem.name} />
+                        <img
+                          className="rounded"
+                          src={elem.secondImage}
+                          alt={elem.name}
+                        />
+                        <img
+                          className="rounded"
+                          src={elem.fourthImage}
+                          alt={elem.name}
+                        />
                       </div>
                     </div>
 
@@ -57,7 +74,10 @@ const MyCollectionArea = () => {
                         </h5>
                       </div>
                       <div className="col-4 text-end">
-                        <Link className="btn btn-minimal hover-primary" href={elem.buttonURL} >
+                        <Link
+                          className="btn btn-minimal hover-primary"
+                          href={elem.buttonURL}
+                        >
                           {elem.buttonText}
                           <i className="ms-1 bi bi-arrow-right" />
                         </Link>
@@ -90,14 +110,12 @@ const MyCollectionArea = () => {
                   </button>
                 </div>
               </div>
-            )} 
-
-
+            )}
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default MyCollectionArea;
+export default MyCollectionArea

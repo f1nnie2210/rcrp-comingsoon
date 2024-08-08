@@ -1,16 +1,16 @@
-import Privacy from "@/components/privacy";
-import React from "react";
+import Privacy from '@/components/privacy'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Privacy - Openmp Việt Nam",
-};
+  title: 'RC:RP Privacy - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<Privacy />
-		</>
-	);
-};
+  return (
+    <>
+      <Privacy />
+    </>
+  )
+}
 
-export default index;
+export default index

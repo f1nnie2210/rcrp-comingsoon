@@ -1,16 +1,16 @@
-import BlogDetails from "@/components/blog-details";
-import React from "react";
+import BlogDetails from '@/components/blog-details'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Blog Details - Openmp Việt Nam",
-};
+  title: 'RC:RP Blog Details - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<BlogDetails />
-		</>
-	);
-};
+  return (
+    <>
+      <BlogDetails />
+    </>
+  )
+}
 
-export default index;
+export default index

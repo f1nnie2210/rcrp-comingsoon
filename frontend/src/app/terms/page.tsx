@@ -1,16 +1,16 @@
-import React from "react";
-import Terms from "@/components/terms";
+import React from 'react'
+import Terms from '@/components/terms'
 
 export const metadata = {
-	title: "RC:RP Terms - Openmp Việt Nam",
-};
+  title: 'RC:RP Terms - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<Terms />
-		</>
-	);
-};
+  return (
+    <>
+      <Terms />
+    </>
+  )
+}
 
-export default index;
+export default index

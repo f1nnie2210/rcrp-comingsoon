@@ -1,16 +1,16 @@
-import Livebids from "@/components/dashboard/live-bids";
-import React from "react";
+import Livebids from '@/components/dashboard/live-bids'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Livebids - Openmp Việt Nam",
-};
+  title: 'RC:RP Livebids - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<Livebids />
-		</>
-	);
-};
+  return (
+    <>
+      <Livebids />
+    </>
+  )
+}
 
-export default index;
+export default index

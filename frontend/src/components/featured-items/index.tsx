@@ -1,10 +1,9 @@
-
-import React from 'react';
-import Divider from '../common/Divider';
-import Breadcrumb from '../common/Breadcrumb';
-import HeaderOne from '@/layouts/headers/HeaderOne';
-import FooterOne from '@/layouts/footers/FooterOne';
-import FeaturedItemsArea from './FeaturedItemsArea';
+import React from 'react'
+import Divider from '../common/Divider'
+import Breadcrumb from '../common/Breadcrumb'
+import HeaderOne from '@/layouts/headers/HeaderOne'
+import FooterOne from '@/layouts/footers/FooterOne'
+import FeaturedItemsArea from './FeaturedItemsArea'
 
 const FeaturedItems = () => {
   return (
@@ -16,7 +15,7 @@ const FeaturedItems = () => {
       <Divider />
       <FooterOne />
     </>
-  );
-};
+  )
+}
 
-export default FeaturedItems;
+export default FeaturedItems

@@ -1,14 +1,14 @@
-import Error from "@/components/error";
+import Error from '@/components/error'
 
 export const metadata = {
-	title: "404 error || RC:RP GTA:SA Roleplay Việt Nam",
-};
+  title: '404 error || RC:RP GTA:SA Roleplay Việt Nam',
+}
 const index = () => {
-	return (
-		<>
-			<Error />
-		</>
-	);
-};
+  return (
+    <>
+      <Error />
+    </>
+  )
+}
 
-export default index;
+export default index

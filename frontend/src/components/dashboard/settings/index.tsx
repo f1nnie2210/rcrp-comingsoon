@@ -1,16 +1,14 @@
-
-
-import React from 'react';
-import SettingsArea from './SettingsArea';
-import DashboardHeader from '@/layouts/headers/DashboardHeader'; 
+import React from 'react'
+import SettingsArea from './SettingsArea'
+import DashboardHeader from '@/layouts/headers/DashboardHeader'
 
 const Settings = () => {
   return (
     <>
-      <DashboardHeader /> 
-      <SettingsArea />      
+      <DashboardHeader />
+      <SettingsArea />
     </>
-  );
-};
+  )
+}
 
-export default Settings;
+export default Settings

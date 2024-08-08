@@ -1,43 +1,46 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import menu_data from "./MenuData";
+'use client'
+import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
+import menu_data from './MenuData'
 
 const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
-  const [navTitle, setNavTitle] = useState("");
-  const [navTitle2, setNavTitle2] = useState("");
-  const [username, setUsername] = useState<string | null>(null);
+  const [navTitle, setNavTitle] = useState('')
+  const [navTitle2, setNavTitle2] = useState('')
+  const [username, setUsername] = useState<string | null>(null)
 
   // Open/Close mobile sub-menus
   const openMobileMenu = (menu: string) => {
-    setNavTitle(navTitle === menu ? "" : menu);
-  };
+    setNavTitle(navTitle === menu ? '' : menu)
+  }
 
   const openMobileMenu2 = (menu: string) => {
-    setNavTitle2(navTitle2 === menu ? "" : menu);
-  };
+    setNavTitle2(navTitle2 === menu ? '' : menu)
+  }
 
   // Retrieve username from localStorage
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const storedUsername = localStorage.getItem("username");
-      setUsername(storedUsername);
+    if (typeof window !== 'undefined') {
+      const storedUsername = localStorage.getItem('username')
+      setUsername(storedUsername)
     }
-  }, []);
+  }, [])
 
   const handleLogout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("username");
-    setUsername(null);
-  };
+    localStorage.removeItem('token')
+    localStorage.removeItem('username')
+    setUsername(null)
+  }
 
   return (
-    <div className={`navbar-collapse collapse ${openMenu ? "show" : ""}`} id="RC:RPNav">
+    <div
+      className={`navbar-collapse collapse ${openMenu ? 'show' : ''}`}
+      id="RC:RPNav"
+    >
       <ul className="navbar-nav navbar-nav-scroll my-2 my-lg-0">
         {menu_data.map((item, i) => (
           <li
             key={i}
-            className={`${item.has_dropdown ? "ft-dd" : ""}`}
+            className={`${item.has_dropdown ? 'ft-dd' : ''}`}
             onClick={() => openMobileMenu(item.title)}
           >
             <Link href={item.link}>{item.title}</Link>
@@ -49,13 +52,13 @@ const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
                 <ul
                   className="ft-dd-menu"
                   style={{
-                    display: navTitle === item.title ? "block" : "none",
+                    display: navTitle === item.title ? 'block' : 'none',
                   }}
                 >
                   {item.sub_menus?.map((submenu, index) => (
                     <React.Fragment key={index}>
                       <li
-                        className={`${submenu.inner_has_dropdown ? "ft-dd" : ""}`}
+                        className={`${submenu.inner_has_dropdown ? 'ft-dd' : ''}`}
                         onClick={() => openMobileMenu2(submenu.title)}
                       >
                         <Link href={submenu.link}>{submenu.title}</Link>
@@ -68,7 +71,10 @@ const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
                             <ul
                               className="ft-dd-menu"
                               style={{
-                                display: navTitle2 === submenu.title ? "block" : "none",
+                                display:
+                                  navTitle2 === submenu.title
+                                    ? 'block'
+                                    : 'none',
                               }}
                             >
                               {submenu.inner_sub?.map((sub_item, sub_index) => (
@@ -110,7 +116,10 @@ const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
             >
               <i className="bi bi-three-dots"></i>
             </button>
-            <ul className="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton1">
+            <ul
+              className="dropdown-menu mt-3"
+              aria-labelledby="dropdownMenuButton1"
+            >
               <li>
                 <Link className="dropdown-item" href="/dashboard">
                   <i className="me-2 bi bi-speedometer2"></i>Dashboard
@@ -145,7 +154,7 @@ const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MobileMenus;
+export default MobileMenus

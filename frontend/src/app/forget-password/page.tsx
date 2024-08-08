@@ -1,16 +1,16 @@
-import ForgetPassword from "@/components/forget-password";
-import React from "react";
+import ForgetPassword from '@/components/forget-password'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Forget Password - Openmp Việt Nam",
-};
+  title: 'RC:RP Forget Password - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<ForgetPassword />
-		</>
-	);
-};
+  return (
+    <>
+      <ForgetPassword />
+    </>
+  )
+}
 
-export default index;
+export default index

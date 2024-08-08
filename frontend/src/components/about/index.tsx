@@ -1,14 +1,12 @@
+import React from 'react'
+import AboutArea from './AboutArea'
+import Divider from '../common/Divider'
+import AboutCounter from './AboutCounter'
+import Breadcrumb from '../common/Breadcrumb'
+import ClientFeedback from './ClientFeedback'
 
-
-import React from 'react';
-import AboutArea from './AboutArea';
-import Divider from '../common/Divider';
-import AboutCounter from './AboutCounter';
-import Breadcrumb from '../common/Breadcrumb';
-import ClientFeedback from './ClientFeedback';
-
-import HeaderOne from '@/layouts/headers/HeaderOne';
-import FooterOne from '@/layouts/footers/FooterOne';
+import HeaderOne from '@/layouts/headers/HeaderOne'
+import FooterOne from '@/layouts/footers/FooterOne'
 
 const About = () => {
   return (
@@ -24,7 +22,7 @@ const About = () => {
       <Divider />
       <FooterOne />
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

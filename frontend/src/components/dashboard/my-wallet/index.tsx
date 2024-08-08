@@ -1,16 +1,14 @@
-
-
-import React from 'react';
-import MyWalletArea from './MyWalletArea';
-import DashboardHeader from '@/layouts/headers/DashboardHeader'; 
+import React from 'react'
+import MyWalletArea from './MyWalletArea'
+import DashboardHeader from '@/layouts/headers/DashboardHeader'
 
 const MyWallet = () => {
   return (
     <>
-      <DashboardHeader /> 
+      <DashboardHeader />
       <MyWalletArea />
     </>
-  );
-};
+  )
+}
 
-export default MyWallet;
+export default MyWallet

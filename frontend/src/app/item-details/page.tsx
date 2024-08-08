@@ -1,16 +1,16 @@
-import ItemDetails from "@/components/item-details";
-import React from "react";
+import ItemDetails from '@/components/item-details'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Item Details - Openmp Việt Nam",
-};
+  title: 'RC:RP Item Details - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<ItemDetails />
-		</>
-	);
-};
+  return (
+    <>
+      <ItemDetails />
+    </>
+  )
+}
 
-export default index;
+export default index

@@ -1,11 +1,9 @@
-
-
-import React from 'react';
-import HeaderOne from '@/layouts/headers/HeaderOne';
-import Breadcrumb from '../common/Breadcrumb';
-import Divider from '../common/Divider';
-import TopSellerArea from './TopSellerArea';
-import FooterOne from '@/layouts/footers/FooterOne';
+import React from 'react'
+import HeaderOne from '@/layouts/headers/HeaderOne'
+import Breadcrumb from '../common/Breadcrumb'
+import Divider from '../common/Divider'
+import TopSellerArea from './TopSellerArea'
+import FooterOne from '@/layouts/footers/FooterOne'
 
 const TopSeller = () => {
   return (
@@ -17,7 +15,7 @@ const TopSeller = () => {
       <Divider />
       <FooterOne />
     </>
-  );
-};
+  )
+}
 
-export default TopSeller;
+export default TopSeller

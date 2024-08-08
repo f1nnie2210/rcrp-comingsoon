@@ -1,16 +1,16 @@
-import CreateNew from "@/components/create-new";
-import React from "react";
+import CreateNew from '@/components/create-new'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Create New - Openmp Việt Nam",
-};
+  title: 'RC:RP Create New - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<CreateNew />
-		</>
-	);
-};
+  return (
+    <>
+      <CreateNew />
+    </>
+  )
+}
 
-export default index;
+export default index

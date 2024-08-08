@@ -1,16 +1,16 @@
-import Contact from "@/components/contact";
-import React from "react";
+import Contact from '@/components/contact'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Contact - Openmp Việt Nam",
-};
+  title: 'RC:RP Contact - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<Contact />
-		</>
-	);
-};
+  return (
+    <>
+      <Contact />
+    </>
+  )
+}
 
-export default index;
+export default index
