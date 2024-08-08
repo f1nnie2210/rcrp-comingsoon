@@ -1,11 +1,9 @@
-
-
-import HeaderOne from '@/layouts/headers/HeaderOne';
-import React from 'react';
-import Breadcrumb from '../common/Breadcrumb';
-import Divider from '../common/Divider';
-import HelpQuestionsArea from './HelpQuestionsArea';
-import FooterOne from '@/layouts/footers/FooterOne';
+import HeaderOne from '@/layouts/headers/HeaderOne'
+import React from 'react'
+import Breadcrumb from '../common/Breadcrumb'
+import Divider from '../common/Divider'
+import HelpQuestionsArea from './HelpQuestionsArea'
+import FooterOne from '@/layouts/footers/FooterOne'
 
 const HelpQuestions = () => {
   return (
@@ -15,9 +13,9 @@ const HelpQuestions = () => {
       <Divider />
       <HelpQuestionsArea />
       <Divider />
-      <FooterOne />      
+      <FooterOne />
     </>
-  );
-};
+  )
+}
 
-export default HelpQuestions;
+export default HelpQuestions

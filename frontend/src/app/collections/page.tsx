@@ -1,16 +1,16 @@
-import React from "react";
-import Collections from "@/components/collections";
+import React from 'react'
+import Collections from '@/components/collections'
 
 export const metadata = {
-	title: "RC:RP Collections - Openmp Việt Nam",
-};
+  title: 'RC:RP Collections - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<Collections />
-		</>
-	);
-};
+  return (
+    <>
+      <Collections />
+    </>
+  )
+}
 
-export default index;
+export default index

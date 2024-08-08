@@ -1,11 +1,9 @@
-
-
-import HeaderOne from '@/layouts/headers/HeaderOne';
-import React from 'react';
-import Breadcrumb from '../common/Breadcrumb';
-import Divider from '../common/Divider';
-import FooterOne from '@/layouts/footers/FooterOne';
-import RankingArea from './RankingArea';
+import HeaderOne from '@/layouts/headers/HeaderOne'
+import React from 'react'
+import Breadcrumb from '../common/Breadcrumb'
+import Divider from '../common/Divider'
+import FooterOne from '@/layouts/footers/FooterOne'
+import RankingArea from './RankingArea'
 
 const Ranking = () => {
   return (
@@ -16,9 +14,8 @@ const Ranking = () => {
       <RankingArea />
       <Divider />
       <FooterOne />
-
     </>
-  );
-};
+  )
+}
 
-export default Ranking;
+export default Ranking

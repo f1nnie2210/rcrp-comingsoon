@@ -1,16 +1,14 @@
-
-
-import React from 'react';
-import DashboardHeader from '@/layouts/headers/DashboardHeader'; 
-import MyCollectionArea from './MyCollectionArea';
+import React from 'react'
+import DashboardHeader from '@/layouts/headers/DashboardHeader'
+import MyCollectionArea from './MyCollectionArea'
 
 const MyCollection = () => {
   return (
     <>
-      <DashboardHeader /> 
+      <DashboardHeader />
       <MyCollectionArea />
     </>
-  );
-};
+  )
+}
 
-export default MyCollection;
+export default MyCollection

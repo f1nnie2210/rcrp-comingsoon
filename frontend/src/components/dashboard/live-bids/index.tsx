@@ -1,16 +1,14 @@
-
-
-import React from 'react';
-import DashboardHeader from '@/layouts/headers/DashboardHeader'; 
-import LivebidsArea from './LivebidsArea';
+import React from 'react'
+import DashboardHeader from '@/layouts/headers/DashboardHeader'
+import LivebidsArea from './LivebidsArea'
 
 const Livebids = () => {
   return (
     <>
-      <DashboardHeader /> 
+      <DashboardHeader />
       <LivebidsArea />
     </>
-  );
-};
+  )
+}
 
-export default Livebids;
+export default Livebids

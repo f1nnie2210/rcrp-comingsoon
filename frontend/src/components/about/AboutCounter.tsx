@@ -1,32 +1,29 @@
-
-
-import React from 'react';
-import Count from '../common/Count';
+import React from 'react'
+import Count from '../common/Count'
 
 interface DataType {
-  value: number;
-  title: string;
+  value: number
+  title: string
 }
 
 const counter_data: DataType[] = [
   {
     value: 3409,
-    title: "Total Items"
+    title: 'Total Items',
   },
   {
     value: 7831,
-    title: "Users"
+    title: 'Users',
   },
   {
     value: 45236,
-    title: "NFTs"
+    title: 'NFTs',
   },
   {
     value: 247,
-    title: "Daily Sale"
-  }
+    title: 'Daily Sale',
+  },
 ]
-
 
 const AboutCounter = () => {
   return (
@@ -37,18 +34,18 @@ const AboutCounter = () => {
             {counter_data.map((item, i) => (
               <div key={i} className="col-6 col-md-3">
                 <div className="single-counter text-center">
-                  <h4 className="counter h2 fw-bold">                     
+                  <h4 className="counter h2 fw-bold">
                     <Count number={item.value} add_style={true} />
-                    </h4>
+                  </h4>
                   <h6 className="mb-0">{item.title}</h6>
                 </div>
               </div>
-            ))} 
+            ))}
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default AboutCounter;
+export default AboutCounter

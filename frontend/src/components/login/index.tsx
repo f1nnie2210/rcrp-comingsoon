@@ -1,11 +1,9 @@
-
-
-import HeaderOne from '@/layouts/headers/HeaderOne';
-import React from 'react';
-import Breadcrumb from '../common/Breadcrumb';
-import Divider from '../common/Divider';
-import FooterOne from '@/layouts/footers/FooterOne';
-import LoginArea from './LoginArea';
+import HeaderOne from '@/layouts/headers/HeaderOne'
+import React from 'react'
+import Breadcrumb from '../common/Breadcrumb'
+import Divider from '../common/Divider'
+import FooterOne from '@/layouts/footers/FooterOne'
+import LoginArea from './LoginArea'
 
 const Login = () => {
   return (
@@ -16,9 +14,8 @@ const Login = () => {
       <LoginArea />
       <Divider />
       <FooterOne />
-
     </>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

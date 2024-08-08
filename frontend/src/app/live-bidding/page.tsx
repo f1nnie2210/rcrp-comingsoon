@@ -1,16 +1,16 @@
-import LiveBidding from "@/components/live-bidding";
-import React from "react";
+import LiveBidding from '@/components/live-bidding'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Live Bidding - Openmp Việt Nam",
-};
+  title: 'RC:RP Live Bidding - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<LiveBidding />
-		</>
-	);
-};
+  return (
+    <>
+      <LiveBidding />
+    </>
+  )
+}
 
-export default index;
+export default index

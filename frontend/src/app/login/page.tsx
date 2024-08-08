@@ -1,16 +1,16 @@
-import Login from "@/components/login";
-import React from "react";
+import Login from '@/components/login'
+import React from 'react'
 
 export const metadata = {
-	title: "RC:RP Login - Openmp Việt Nam",
-};
+  title: 'RC:RP Login - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<Login />
-		</>
-	);
-};
+  return (
+    <>
+      <Login />
+    </>
+  )
+}
 
-export default index;
+export default index

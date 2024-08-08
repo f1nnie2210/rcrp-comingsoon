@@ -1,23 +1,20 @@
-
 'use client'
 
-import blog_data from '@/data/blog-list';
-import Link from 'next/link';
-import React, { useState } from 'react';
+import blog_data from '@/data/blog-list'
+import Link from 'next/link'
+import React, { useState } from 'react'
 
 const BlogArea = () => {
-
-  const [count, setCount] = useState(9);
-  const [noMorePost, setNoMorePost] = useState(false);
-  const countSlice = blog_data.slice(0, count);
+  const [count, setCount] = useState(9)
+  const [noMorePost, setNoMorePost] = useState(false)
+  const countSlice = blog_data.slice(0, count)
 
   const handleLoadMore = () => {
-    setCount(count + 3);
+    setCount(count + 3)
     if (count >= blog_data.length) {
-      setNoMorePost(true);
+      setNoMorePost(true)
     }
   }
-
 
   return (
     <>
@@ -35,21 +32,25 @@ const BlogArea = () => {
                         </Link>
                       </div>
                       <div className="card-body p-3">
-                        <Link className="post-title mb-2 hover-primary" href="/blog-details">
+                        <Link
+                          className="post-title mb-2 hover-primary"
+                          href="/blog-details"
+                        >
                           {item.title}
                         </Link>
                         <p className="mb-4" style={{ color: '#8084AE' }}>
                           {item.excerpt}
                         </p>
-                        <Link className="btn btn-primary btn-sm rounded-pill" href="/blog-details">
+                        <Link
+                          className="btn btn-primary btn-sm rounded-pill"
+                          href="/blog-details"
+                        >
                           Read more<i className="ms-1 bi bi-arrow-right"></i>
                         </Link>
                       </div>
                     </div>
                   </div>
                 ))}
-
-
               </div>
 
               {noMorePost ? (
@@ -75,8 +76,6 @@ const BlogArea = () => {
                   </div>
                 </div>
               )}
-
-
             </div>
             <div className="col-12 col-sm-5 col-lg-4 col-xxl-3">
               <h4 className="mb-2">Popular News</h4>
@@ -86,25 +85,23 @@ const BlogArea = () => {
                 <div key={i} className="popular-blog">
                   <Link className="post-title mb-2" href="/blog-details">
                     <span>{item.id}</span>
-                <h5 className="hover-primary">
-                 {item.title}
-                  </h5>
+                    <h5 className="hover-primary">{item.title}</h5>
                   </Link>
-                <p>
-                  {item.excerpt}
-                  </p>
-                  <Link className="btn btn-minimal text-start hover-primary" href="/blog-details">
+                  <p>{item.excerpt}</p>
+                  <Link
+                    className="btn btn-minimal text-start hover-primary"
+                    href="/blog-details"
+                  >
                     Continue Reading <i className="ms-1 bi bi-arrow-right"></i>
                   </Link>
-              </div>
-              ))} 
-
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default BlogArea;
+export default BlogArea

@@ -1,16 +1,16 @@
-import React from "react";
-import MyCollection from "@/components/dashboard/my-collection";
+import React from 'react'
+import MyCollection from '@/components/dashboard/my-collection'
 
 export const metadata = {
-	title: "RC:RP My Collection - Openmp Việt Nam",
-};
+  title: 'RC:RP My Collection - Openmp Việt Nam',
+}
 
 const index = () => {
-	return (
-		<>
-			<MyCollection />
-		</>
-	);
-};
+  return (
+    <>
+      <MyCollection />
+    </>
+  )
+}
 
-export default index;
+export default index
