@@ -2,7 +2,7 @@ import ExploreTwo from "@/components/explore-2";
 import React from "react";
 
 export const metadata = {
-	title: "Funto explore-2 - Next js NFT Marketplace",
+	title: "RC:RP explore-2 - Openmp Việt Nam",
 };
 
 const index = () => {

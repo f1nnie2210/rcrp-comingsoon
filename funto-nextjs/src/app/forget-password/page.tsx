@@ -2,7 +2,7 @@ import ForgetPassword from "@/components/forget-password";
 import React from "react";
 
 export const metadata = {
-	title: "Funto Forget Password - Next js NFT Marketplace",
+	title: "RC:RP Forget Password - Openmp Việt Nam",
 };
 
 const index = () => {

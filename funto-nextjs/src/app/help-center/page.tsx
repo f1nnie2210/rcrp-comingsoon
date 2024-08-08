@@ -2,7 +2,7 @@ import HelpCenter from "@/components/help-center";
 import React from "react";
 
 export const metadata = {
-	title: "Funto Help Center - Next js NFT Marketplace",
+	title: "RC:RP Help Center - Openmp Việt Nam",
 };
 
 const index = () => {

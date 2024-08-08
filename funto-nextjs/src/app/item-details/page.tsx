@@ -2,7 +2,7 @@ import ItemDetails from "@/components/item-details";
 import React from "react";
 
 export const metadata = {
-	title: "Funto Item Details - Next js NFT Marketplace",
+	title: "RC:RP Item Details - Openmp Việt Nam",
 };
 
 const index = () => {

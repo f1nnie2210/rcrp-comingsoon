@@ -2,7 +2,7 @@ import React from "react";
 import Terms from "@/components/terms";
 
 export const metadata = {
-	title: "Funto Terms - Next js NFT Marketplace",
+	title: "RC:RP Terms - Openmp Việt Nam",
 };
 
 const index = () => {

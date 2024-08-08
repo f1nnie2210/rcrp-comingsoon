@@ -2,7 +2,7 @@ import React from "react";
 import Author from "@/components/author";
 
 export const metadata = {
-	title: "Funto Author - Next js NFT Marketplace",
+	title: "RC:RP Author - Openmp Việt Nam",
 };
 
 const index = () => {

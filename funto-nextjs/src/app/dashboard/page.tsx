@@ -2,7 +2,7 @@ import Dashboard from "@/components/dashboard/dashboard";
 
 
 export const metadata = {
-  title: "Funto Dashboard - Next js NFT Marketplace",
+  title: "RC:RP Dashboard - Openmp Việt Nam",
 };
 
 

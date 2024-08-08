@@ -2,7 +2,7 @@ import React from "react";
 import Newsletter from "@/components/newsletter";
 
 export const metadata = {
-	title: "Funto Newsletter - Next js NFT Marketplace",
+	title: "RC:RP Newsletter - Openmp Việt Nam",
 };
 
 const index = () => {

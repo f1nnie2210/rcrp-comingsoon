@@ -2,7 +2,7 @@ import Livebids from "@/components/dashboard/live-bids";
 import React from "react";
 
 export const metadata = {
-	title: "Funto Livebids - Next js NFT Marketplace",
+	title: "RC:RP Livebids - Openmp Việt Nam",
 };
 
 const index = () => {
