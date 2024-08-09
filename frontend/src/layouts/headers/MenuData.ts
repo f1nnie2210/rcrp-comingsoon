@@ -19,12 +19,8 @@ const menu_data: DataType[] = [
   {
     id: 1,
     title: 'Trang Chủ',
-    link: '#',
+    link: '/',
     has_dropdown: false,
-    sub_menus: [
-      { link: '/', title: 'Home Variation 1' },
-      { link: '/home-2', title: 'Home Variation 2' },
-    ],
   },
   {
     id: 2,
@@ -37,32 +33,18 @@ const menu_data: DataType[] = [
       { link: '/collections', title: 'Mystery Box' },
       { link: '/top-seller', title: 'House n Door' },
       { link: '/top-buyer', title: 'Mapping' },
-      { link: '/item-details', title: 'Item Details' },
+      // { link: '/item-details', title: 'Item Details' },
     ],
   },
   {
     id: 3,
-    title: 'Admin',
-    link: '#',
-    has_dropdown: true,
-    sub_menus: [
-      { link: '/dashboard', title: 'Dashboard' },
-      { link: '/live-bids', title: 'Live Bids' },
-      { link: '/my-collection', title: 'My Collection' },
-      { link: '/my-wallet', title: 'My Wallet' },
-      { link: '/notifications', title: 'Notifications' },
-      { link: '/settings', title: 'Settings' },
-    ],
-  },
-  {
-    id: 4,
     title: 'Hướng Dẫn',
     link: '#',
     has_dropdown: true,
     sub_menus: [
       { link: '/activity', title: 'Activity' },
       { link: '/ranking', title: 'Ranking' },
-      { link: '/create-new', title: 'Create New Items' },
+      // { link: '/create-new', title: 'Create New Items' },
       { link: '/connet-wallet', title: 'Connect Wallet' },
       { link: '/author', title: 'Author Profile' },
       {
@@ -110,6 +92,23 @@ const menu_data: DataType[] = [
       },
     ],
   },
+  {
+    id: 4,
+    title: 'Others',
+    link: '#',
+    has_dropdown: true,
+    sub_menus: [
+      { link: '/about', title: 'About Us' },
+      { link: '/contact', title: 'Contact' },
+      // { link: '/dashboard', title: 'Dashboard' },
+      // { link: '/live-bids', title: 'Live Bids' },
+      // { link: '/my-collection', title: 'My Collection' },
+      // { link: '/my-wallet', title: 'My Wallet' },
+      // { link: '/notifications', title: 'Notifications' },
+      // { link: '/settings', title: 'Settings' },
+    ],
+  },
+
   {
     id: 6,
     title: 'Help Center',

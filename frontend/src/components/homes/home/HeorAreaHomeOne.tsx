@@ -24,7 +24,7 @@ const HeorAreaHomeOne = () => {
                   data-aos-delay="800"
                 >
                   Được đội ngũ RC:RP thiết kế từ những dòng code Openmp &amp;
-                  phù hợp và tương tích giữa Androi và PC
+                  phù hợp và tương tích giữa Android và PC
                 </p>
                 <div
                   className="hero-btn-group"
