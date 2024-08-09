@@ -5,7 +5,7 @@ const live_actions = [
     image: '/assets/img/bg-img/9.jpg',
     bidEndsTime: 'April 31, 2023 14:19:49',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -101,7 +101,7 @@ const live_actions = [
     image: '/assets/img/bg-img/10.jpg',
     bidEndsTime: 'April 24, 2023 00:00:00',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -197,7 +197,7 @@ const live_actions = [
     image: '/assets/img/bg-img/11.jpg',
     bidEndsTime: 'May 26, 2023 06:32:41',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -286,7 +286,7 @@ const live_actions = [
     image: '/assets/img/bg-img/12.jpg',
     bidEndsTime: 'Nov 22, 2022 00:00:15',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -382,7 +382,7 @@ const live_actions = [
     image: '/assets/img/bg-img/9.jpg',
     bidEndsTime: 'April 31, 2023 14:19:49',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -478,7 +478,7 @@ const live_actions = [
     image: '/assets/img/bg-img/10.jpg',
     bidEndsTime: 'April 24, 2023 00:00:00',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -574,7 +574,7 @@ const live_actions = [
     image: '/assets/img/bg-img/11.jpg',
     bidEndsTime: 'May 26, 2023 06:32:41',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -663,7 +663,7 @@ const live_actions = [
     image: '/assets/img/bg-img/12.jpg',
     bidEndsTime: 'Nov 22, 2022 00:00:15',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -759,7 +759,7 @@ const live_actions = [
     image: '/assets/img/bg-img/9.jpg',
     bidEndsTime: 'April 31, 2023 14:19:49',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -855,7 +855,7 @@ const live_actions = [
     image: '/assets/img/bg-img/10.jpg',
     bidEndsTime: 'April 24, 2023 00:00:00',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -951,7 +951,7 @@ const live_actions = [
     image: '/assets/img/bg-img/11.jpg',
     bidEndsTime: 'May 26, 2023 06:32:41',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -1040,7 +1040,7 @@ const live_actions = [
     image: '/assets/img/bg-img/12.jpg',
     bidEndsTime: 'Nov 22, 2022 00:00:15',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -1136,7 +1136,7 @@ const live_actions = [
     image: '/assets/img/bg-img/9.jpg',
     bidEndsTime: 'April 31, 2023 14:19:49',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -1232,7 +1232,7 @@ const live_actions = [
     image: '/assets/img/bg-img/10.jpg',
     bidEndsTime: 'April 24, 2023 00:00:00',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -1328,7 +1328,7 @@ const live_actions = [
     image: '/assets/img/bg-img/11.jpg',
     bidEndsTime: 'May 26, 2023 06:32:41',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -1417,7 +1417,7 @@ const live_actions = [
     image: '/assets/img/bg-img/12.jpg',
     bidEndsTime: 'Nov 22, 2022 00:00:15',
     currentPrice: '0.784 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',

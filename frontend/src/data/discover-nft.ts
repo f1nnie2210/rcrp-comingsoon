@@ -5,7 +5,7 @@ const discover_data = [
     image: '/assets/img/bg-img/13.jpg',
     catagory: 'cards',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -114,7 +114,7 @@ const discover_data = [
     image: '/assets/img/bg-img/14.jpg',
     catagory: 'cards',
     currentPrice: '2.961 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -223,7 +223,7 @@ const discover_data = [
     image: '/assets/img/bg-img/15.jpg',
     catagory: 'collectibles',
     currentPrice: '0.06 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -332,7 +332,7 @@ const discover_data = [
     image: '/assets/img/bg-img/16.jpg',
     catagory: 'collectibles',
     currentPrice: '0.01 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -441,7 +441,7 @@ const discover_data = [
     image: '/assets/img/bg-img/17.jpg',
     catagory: 'photos',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -550,7 +550,7 @@ const discover_data = [
     image: '/assets/img/bg-img/18.jpg',
     catagory: 'collectibles',
     currentPrice: '9.32 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -659,7 +659,7 @@ const discover_data = [
     image: '/assets/img/bg-img/19.jpg',
     catagory: 'cards',
     currentPrice: '0.061 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -768,7 +768,7 @@ const discover_data = [
     image: '/assets/img/bg-img/20.jpg',
     catagory: 'collectibles',
     currentPrice: '0.01 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -877,7 +877,7 @@ const discover_data = [
     image: '/assets/img/bg-img/21.jpg',
     catagory: 'art',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -986,7 +986,7 @@ const discover_data = [
     image: '/assets/img/bg-img/22.jpg',
     catagory: 'photos',
     currentPrice: '0.061 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -1095,7 +1095,7 @@ const discover_data = [
     image: '/assets/img/bg-img/23.jpg',
     catagory: 'cards',
     currentPrice: '0.99 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -1204,7 +1204,7 @@ const discover_data = [
     image: '/assets/img/bg-img/24.jpg',
     catagory: 'art',
     currentPrice: '2 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -1313,7 +1313,7 @@ const discover_data = [
     image: '/assets/img/bg-img/13.jpg',
     catagory: 'cards',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -1422,7 +1422,7 @@ const discover_data = [
     image: '/assets/img/bg-img/14.jpg',
     catagory: 'cards',
     currentPrice: '2.961 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -1531,7 +1531,7 @@ const discover_data = [
     image: '/assets/img/bg-img/15.jpg',
     catagory: 'collectibles',
     currentPrice: '0.06 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -1640,7 +1640,7 @@ const discover_data = [
     image: '/assets/img/bg-img/16.jpg',
     catagory: 'collectibles',
     currentPrice: '0.01 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -1749,7 +1749,7 @@ const discover_data = [
     image: '/assets/img/bg-img/17.jpg',
     catagory: 'photos',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -1858,7 +1858,7 @@ const discover_data = [
     image: '/assets/img/bg-img/18.jpg',
     catagory: 'collectibles',
     currentPrice: '9.32 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -1967,7 +1967,7 @@ const discover_data = [
     image: '/assets/img/bg-img/19.jpg',
     catagory: 'cards',
     currentPrice: '0.061 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -2076,7 +2076,7 @@ const discover_data = [
     image: '/assets/img/bg-img/20.jpg',
     catagory: 'collectibles',
     currentPrice: '0.01 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -2185,7 +2185,7 @@ const discover_data = [
     image: '/assets/img/bg-img/21.jpg',
     catagory: 'art',
     currentPrice: '0.861 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -2294,7 +2294,7 @@ const discover_data = [
     image: '/assets/img/bg-img/22.jpg',
     catagory: 'photos',
     currentPrice: '0.061 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',
@@ -2403,7 +2403,7 @@ const discover_data = [
     image: '/assets/img/bg-img/23.jpg',
     catagory: 'cards',
     currentPrice: '0.99 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: '',
@@ -2512,7 +2512,7 @@ const discover_data = [
     image: '/assets/img/bg-img/24.jpg',
     catagory: 'art',
     currentPrice: '2 ETH',
-    priceText: 'Current Bid',
+    priceText: 'Giá Hiện Tại',
     badgeInfo: [
       {
         visibility: 'hidden',

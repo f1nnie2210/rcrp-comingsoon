@@ -2,16 +2,10 @@
 
 import Link from 'next/link'
 import UseSticky from '@/hooks/UseSticky'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Count from '@/components/common/Count'
+import axios from 'axios'
 
-const userInfo = [
-  {
-    thumbnail: 'img/bg-img/u2.jpg',
-    username: 'Designing W.',
-    userType: 'Premium User',
-  },
-]
 
 const balanceCard = [
   {
@@ -63,8 +57,10 @@ const AdminNav = [
 
 const DashboardHeader = () => {
   const { sticky } = UseSticky()
-
   const [isActive, setActive] = useState(false)
+  const [username, setUsername] = useState<string | null>(null)
+  const [admin, setAdminLevel] = useState<string | null>(null)
+
 
   const handleToggle = () => {
     setActive(!isActive)
@@ -74,6 +70,32 @@ const DashboardHeader = () => {
   const handleUserToggle = () => {
     setUserActive(!userActive)
   }
+
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/api/auth/user-info', {
+          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`,
+          },
+          
+        })
+        const { Username, Admin } = response.data
+        setUsername(Username)
+        if (Admin === 0) {
+          setAdminLevel('User')
+        } else if (Admin >= 1 && Admin <= 8) {
+          setAdminLevel(`Admin ${Admin}`)
+        } else {
+          setAdminLevel('Unknown')
+        }      } catch (error) {
+        console.error('Error fetching user info:', error)
+      }
+    }
+
+    fetchUserInfo()
+  }, [])
 
   return (
     <>
@@ -218,10 +240,10 @@ const DashboardHeader = () => {
                 <img src="/assets/img/bg-img/u2.jpg" alt="" />
                 <div className="ms-3">
                   <h6 className="lh-1 text-dark fz-18">
-                    {userInfo[0].username}
+                  {username}
                   </h6>
                   <span className="badge bg-primary fz-12">
-                    {userInfo[0].userType}
+                  {admin}
                   </span>
                 </div>
               </div>
@@ -274,10 +296,10 @@ const DashboardHeader = () => {
                 <a
                   className="fz-14 ms-1"
                   rel="noreferrer"
-                  href="https://themeforest.net/user/rk_theme/portfolio"
+                  href=""
                   target="_blank"
                 >
-                  rk_theme
+                  RCRP
                 </a>
               </p>
             </div>

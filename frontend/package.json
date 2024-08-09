@@ -11,6 +11,7 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@nextui-org/spinner": "^2.0.33",
     "axios": "^1.7.3",
     "bootstrap": "^5.3.3",
     "next": "^14.2.3",

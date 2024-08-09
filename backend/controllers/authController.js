@@ -30,3 +30,17 @@ exports.login = async (req, res) => {
         res.status(500).send("Server error.");
     }
 };
+
+exports.getUserInfo = async (req, res) => {
+    try {
+        const user = await User.findByPk(req.user.ID, {
+            attributes: ['Username', 'Admin']
+        });
+        if (!user) {
+            return res.status(404).send("User not found.");
+        }
+        res.send(user);
+    } catch (err) {
+        res.status(500).send("Server error.");
+    }
+};
