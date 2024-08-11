@@ -8,89 +8,89 @@ const footer_content = {
       widgetTitle: 'Explore',
       navList: [
         {
-          text: 'Featured Drops',
+          text: 'Phương Tiện',
           url: '/featured-items',
         },
         {
-          text: 'Live Auctions',
+          text: 'Blindbox & Gacha',
           url: '/live-bidding',
         },
-        {
-          text: 'Collections',
-          url: '/collections',
-        },
-        {
-          text: 'Top Seller',
-          url: '/top-seller',
-        },
-        {
-          text: 'Top Buyer',
-          url: '/top-buyer',
-        },
-        {
-          text: 'Item Details',
-          url: '/live-bid/1',
-        },
+        // {
+        //   text: 'Collections',
+        //   url: '/collections',
+        // },
+        // {
+        //   text: 'Top Seller',
+        //   url: '/top-seller',
+        // },
+        // {
+        //   text: 'Top Buyer',
+        //   url: '/top-buyer',
+        // },
+        // {
+        //   text: 'Item Details',
+        //   url: '/live-bid/1',
+        // },
       ],
     },
-    {
-      widgetTitle: 'Marketplace',
-      navList: [
-        {
-          text: 'Art',
-          url: '#',
-        },
-        {
-          text: 'Cards',
-          url: '#',
-        },
-        {
-          text: 'Collectibles',
-          url: '#',
-        },
-        {
-          text: 'Domain',
-          url: '#',
-        },
-        {
-          text: 'Photos',
-          url: '#',
-        },
-        {
-          text: 'Sports',
-          url: '#',
-        },
-        {
-          text: 'Videos',
-          url: '#',
-        },
-      ],
-    },
-    {
-      widgetTitle: 'Company',
-      navList: [
-        {
-          text: 'Forum',
-          url: '#',
-        },
-        {
-          text: 'Licences',
-          url: '#',
-        },
-        {
-          text: 'Careers',
-          url: '#',
-        },
-        {
-          text: 'Conditions',
-          url: '#',
-        },
-        {
-          text: 'Privacy',
-          url: '#',
-        },
-      ],
-    },
+    // {
+    //   widgetTitle: 'Marketplace',
+    //   navList: [
+    //     {
+    //       text: 'Art',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Cards',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Collectibles',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Domain',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Photos',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Sports',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Videos',
+    //       url: '#',
+    //     },
+    //   ],
+    // },
+    // {
+    //   widgetTitle: 'Company',
+    //   navList: [
+    //     {
+    //       text: 'Forum',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Licences',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Careers',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Conditions',
+    //       url: '#',
+    //     },
+    //     {
+    //       text: 'Privacy',
+    //       url: '#',
+    //     },
+    //   ],
+    // },
   ],
 }
 

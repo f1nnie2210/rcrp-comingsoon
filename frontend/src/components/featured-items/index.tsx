@@ -9,7 +9,7 @@ const FeaturedItems = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title="Featured" subtitle="Featured" />
+      <Breadcrumb title="Phương Tiện" subtitle="Phương Tiện" />
       <Divider />
       <FeaturedItemsArea />
       <Divider />

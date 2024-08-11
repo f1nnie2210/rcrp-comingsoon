@@ -24,7 +24,7 @@ const FeaturedHomeOne = () => {
           <div className="row">
             <div className="col-12 col-sm-9 col-lg-6">
               <div className="section-heading">
-                <h2 className="mb-0">Lựa chọn tốt</h2>
+                <h2 className="mb-0">Phương Tiện</h2>
               </div>
             </div>
           </div>
@@ -228,7 +228,7 @@ const FeaturedHomeOne = () => {
                                 className="btn btn-minimal btn-sm hover-primary"
                                 href="/activity"
                               >
-                                <i className="bi bi-activity me-1"></i>Activity
+                                <i className="bi bi-activity me-1"></i>Còn hàng
                               </Link>
                             </div>
                           </div>
