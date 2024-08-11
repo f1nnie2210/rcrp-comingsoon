@@ -131,7 +131,7 @@ const HeaderOne = () => {
                           Dashboard
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link className="dropdown-item" href="/my-collection">
                           <i className="me-2 bi bi-collection"></i>
                           Collections
@@ -142,7 +142,7 @@ const HeaderOne = () => {
                           <i className="me-2 bi bi-bell"></i>
                           Notifications
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link className="dropdown-item" href="/settings">
                           <i className="me-2 bi bi-gear"></i>

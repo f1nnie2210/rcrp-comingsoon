@@ -29,8 +29,8 @@ const menu_data: DataType[] = [
     has_dropdown: true,
     sub_menus: [
       { link: '/featured-items', title: 'Phương Tiện' },
-      { link: '/live-bidding', title: 'Gacha Box' },
-      { link: '/collections', title: 'Mystery Box' },
+      { link: '/live-bidding', title: 'Blindbox & Gacha' },
+      { link: '/collections', title: 'Truck' },
       { link: '/top-seller', title: 'House n Door' },
       { link: '/top-buyer', title: 'Mapping' },
       // { link: '/item-details', title: 'Item Details' },

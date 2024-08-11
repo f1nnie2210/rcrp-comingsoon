@@ -12,7 +12,7 @@ const balanceCard = [
     title: 'Red Coin',
     icon: '/assets/img/core-img/ethereum.png',
     balance: 200,
-    balanceType: 'RC',
+    // balanceType: 'RC',
   },
 ]
 
@@ -138,26 +138,26 @@ const DashboardHeader = () => {
                 >
                   <li>
                     <a className="dropdown-item" href="#">
-                      <i className="me-2 bi bi-percent"></i>You have an offer!
+                      <i className="me-2 bi bi-percent"></i>Chào mừng đến với RC:RP
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
                       <i className="bg-info me-2 bi bi-tags"></i>
-                      Congratulations! You sale an item.
+                      Rất vui vì đã được bạn đồng hành cùng chúng tôi
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      <i className="bg-danger me-2 bi bi-gift"></i>January
-                      freebies have arrived.
+                      <i className="bg-danger me-2 bi bi-gift"></i>Sở hữu ngay những vật phẩm đặc biệt
+                      bằng cách đổi RC hoặc mua RC nhé.
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    {/* <a className="dropdown-item" href="#">
                       <i className="bg-warning me-2 bi bi-star"></i>A new rating
                       has been received.
-                    </a>
+                    </a> */}
                   </li>
                   <li>
                     <Link
@@ -191,7 +191,7 @@ const DashboardHeader = () => {
                       <i className="me-2 bi bi-person-circle"></i>Dashboard
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link className="dropdown-item" href="/live-bids">
                       <i className="me-2 bi bi-hammer"></i>My bids
                     </Link>
@@ -200,7 +200,7 @@ const DashboardHeader = () => {
                     <Link className="dropdown-item" href="/my-collection">
                       <i className="me-2 bi bi-collection"></i>Collection
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link className="dropdown-item" href="/settings">
                       <i className="me-2 bi bi-gear"></i>Settings
@@ -213,7 +213,7 @@ const DashboardHeader = () => {
                 className="btn btn-sm btn-danger rounded-pill ms-2 ms-sm-3 d-none d-sm-block"
                 href="/"
               >
-                <i className="bi bi-eye me-1"></i>Frontend
+                <i className="bi bi-eye me-1"></i>Trang Chủ
               </Link>
 
               <div
@@ -237,7 +237,7 @@ const DashboardHeader = () => {
             {/* User Name */}
             <div className="user-name mb-5">
               <div className="d-flex align-items-center">
-                <img src="/assets/img/bg-img/u2.jpg" alt="" />
+                <img src="/assets/img/bg-img/u2.png" alt="" />
                 <div className="ms-3">
                   <h6 className="lh-1 text-dark fz-18">
                   {username}
