@@ -2,7 +2,7 @@ const featured_data = [
   {
     id: 1,
     title: 'Cheetah',
-    image: '/assets/img/bg-img/40.jpg',
+    image: '/assets/img/bg-img/Bullet.jpg',
     currentPrice: '200 RC',
     priceText: 'Giá hiện tại',
     badgeVisibility: '',
@@ -95,7 +95,7 @@ const featured_data = [
   {
     id: 2,
     title: 'Bullet',
-    image: '/assets/img/bg-img/41.jpg',
+    image: '/assets/img/bg-img/Bullet.jpg',
     currentPrice: '230 RC',
     priceText: 'Giá Hiện Tại',
     badgeVisibility: '',
@@ -367,7 +367,7 @@ const featured_data = [
   {
     id: 5,
     title: 'Banshee',
-    image: '/assets/img/bg-img/40.jpg',
+    image: '/assets/img/bg-img/Cheetah.jpg',
     currentPrice: '150 RC',
     priceText: 'Giá Hiện Tại',
     badgeVisibility: '',
@@ -460,7 +460,7 @@ const featured_data = [
   {
     id: 6,
     title: 'Sanchez',
-    image: '/assets/img/bg-img/41.jpg',
+    image: '/assets/img/bg-img/Bullet.jpg',
     currentPrice: '120 RC',
     priceText: 'Giá Hiện Tại',
     badgeVisibility: '',
@@ -732,7 +732,7 @@ const featured_data = [
   {
     id: 9,
     title: 'FCR 900',
-    image: '/assets/img/bg-img/40.jpg',
+    image: '/assets/img/bg-img/Cheetah.jpg',
     currentPrice: '150 RC',
     priceText: 'Giá Hiện Tại',
     badgeVisibility: '',
@@ -825,7 +825,7 @@ const featured_data = [
   {
     id: 10,
     title: 'Elegy',
-    image: '/assets/img/bg-img/41.jpg',
+    image: '/assets/img/bg-img/Bullet.jpg',
     currentPrice: '180 RC',
     priceText: 'Giá Hiện Tại',
     badgeVisibility: '',
@@ -1097,7 +1097,7 @@ const featured_data = [
   {
     id: 13,
     title: 'Cowboy Riding Bull Nature',
-    image: '/assets/img/bg-img/40.jpg',
+    image: '/assets/img/bg-img/Cheetah.jpg',
     currentPrice: '0.061 ETH',
     priceText: 'Giá Hiện Tại',
     badgeVisibility: '',
@@ -1190,7 +1190,7 @@ const featured_data = [
   {
     id: 14,
     title: 'Chicken Wearing Santa Hats',
-    image: '/assets/img/bg-img/41.jpg',
+    image: '/assets/img/bg-img/Bullet.jpg',
     currentPrice: '0.96 ETH',
     priceText: 'Giá Hiện Tại',
     badgeVisibility: '',

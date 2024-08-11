@@ -9,10 +9,10 @@ import axios from 'axios'
 
 const balanceCard = [
   {
-    title: 'Current balance',
+    title: 'Red Coin',
     icon: '/assets/img/core-img/ethereum.png',
-    balance: 40678,
-    balanceType: 'ETH',
+    balance: 200,
+    balanceType: 'RC',
   },
 ]
 
@@ -23,30 +23,30 @@ const AdminNav = [
     icon: 'bi-speedometer',
     text: 'Dashboard',
   },
-  {
-    id: 2,
-    path: '/live-bids',
-    icon: 'bi-hammer',
-    text: 'Live Bids',
-  },
-  {
-    id: 3,
-    path: '/my-collection',
-    icon: 'bi-columns-gap',
-    text: 'My Collections',
-  },
+  // {
+  //   id: 2,
+  //   path: '/live-bids',
+  //   icon: 'bi-hammer',
+  //   text: 'Live Bids',
+  // },
+  // {
+  //   id: 3,
+  //   path: '/my-collection',
+  //   icon: 'bi-columns-gap',
+  //   text: 'My Collections',
+  // },
   {
     id: 4,
     path: '/my-wallet',
     icon: 'bi-wallet2',
-    text: 'My Wallet',
+    text: 'Kho Đồ',
   },
-  {
-    id: 5,
-    path: '/notifications',
-    icon: 'bi-bell',
-    text: 'Notifications',
-  },
+  // {
+  //   id: 5,
+  //   path: '/notifications',
+  //   icon: 'bi-bell',
+  //   text: 'Notifications',
+  // },
   {
     id: 6,
     path: '/settings',
@@ -266,7 +266,7 @@ const DashboardHeader = () => {
                   className="btn btn-warning rounded-pill btn-sm w-100 mt-3"
                   href="#"
                 >
-                  Recharge
+                  Mua RC
                 </Link>
               </div>
             </div>

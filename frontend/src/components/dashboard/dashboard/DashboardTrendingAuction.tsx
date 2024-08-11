@@ -21,7 +21,7 @@ const DashboardTrendingAuction = () => {
                 src="/assets/img/core-img/fire2.png"
                 alt=""
               />
-              <h5 className="mb-0">Trending Auctions</h5>
+              <h5 className="mb-0">Vật Phẩm HOT</h5>
             </div>
             <Swiper
               loop={true}
