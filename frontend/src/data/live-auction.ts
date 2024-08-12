@@ -1,9 +1,9 @@
 const live_actions = [
   {
     id: 1,
-    title: 'Fancy Car',
+    title: 'Flex Box',
     image: '/assets/img/bg-img/9.jpg',
-    bidEndsTime: 'April 31, 2023 14:19:49',
+    bidEndsTime: 'April 31, 2024 14:19:49',
     currentPrice: '0.784 ETH',
     priceText: 'Giá Hiện Tại',
     badgeInfo: [
@@ -38,9 +38,9 @@ const live_actions = [
         icon: 'bi-bag',
       },
     ],
-    authorName: 'designing_world',
-    authorAvater: '/assets/img/bg-img/u4.jpg',
-    authorVerified: 'true',
+    // authorName: 'designing_world',
+    // authorAvater: '/assets/img/bg-img/u4.jpg',
+    // authorVerified: 'true',
     buttonInfo: [
       {
         style: 'primary',
@@ -380,7 +380,7 @@ const live_actions = [
     id: 5,
     title: 'Fancy Car',
     image: '/assets/img/bg-img/9.jpg',
-    bidEndsTime: 'April 31, 2023 14:19:49',
+    bidEndsTime: 'April 31, 2024 14:19:49',
     currentPrice: '0.784 ETH',
     priceText: 'Giá Hiện Tại',
     badgeInfo: [
@@ -757,7 +757,7 @@ const live_actions = [
     id: 9,
     title: 'Fancy Car',
     image: '/assets/img/bg-img/9.jpg',
-    bidEndsTime: 'April 31, 2023 14:19:49',
+    bidEndsTime: 'April 31, 2024 14:19:49',
     currentPrice: '0.784 ETH',
     priceText: 'Giá Hiện Tại',
     badgeInfo: [
@@ -1134,7 +1134,7 @@ const live_actions = [
     id: 13,
     title: 'Fancy Car',
     image: '/assets/img/bg-img/9.jpg',
-    bidEndsTime: 'April 31, 2023 14:19:49',
+    bidEndsTime: 'April 31, 2024 14:19:49',
     currentPrice: '0.784 ETH',
     priceText: 'Giá Hiện Tại',
     badgeInfo: [

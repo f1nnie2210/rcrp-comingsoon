@@ -122,14 +122,14 @@ const LiveAuctionHomeOne = ({ style_2 }: any) => {
                     <div className="row gx-2 align-items-center mt-2">
                       <div className="col-8">
                         <div className="name-info d-flex align-items-center">
-                          <div className="author-img position-relative">
+                          {/* <div className="author-img position-relative">
                             <img
                               className="shadow"
                               src={item.authorAvater}
                               alt=""
                             />
                             <i className="bi bi-check position-absolute bg-success"></i>
-                          </div>
+                          </div> */}
                           <div className="name-author">
                             <Link
                               className="name d-block hover-primary fw-bold text-truncate"
@@ -140,12 +140,12 @@ const LiveAuctionHomeOne = ({ style_2 }: any) => {
                             >
                               {item.title}
                             </Link>
-                            <Link
+                            {/* <Link
                               className="author d-block fz-12 hover-primary text-truncate"
                               href="/author"
                             >
                               @ {item.authorName}
-                            </Link>
+                            </Link> */}
                           </div>
                         </div>
                       </div>
