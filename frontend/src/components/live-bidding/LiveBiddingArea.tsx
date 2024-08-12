@@ -168,7 +168,7 @@ const LiveBiddingArea = () => {
                           className={`btn btn-${item.buttonInfo[0].style} rounded-pill btn-sm mt-3 w-100`}
                           href="#"
                         >
-                          Place Bid
+                          Mua Ngay
                         </a>
                       </div>
                     </div>
@@ -197,7 +197,7 @@ const LiveBiddingArea = () => {
                 onClick={() => handleLoadMore()}
                 className="btn btn-primary btn-sm rounded-pill"
               >
-                View More Items<i className="ms-1 bi bi-arrow-repeat"></i>
+                Xem Thêm<i className="ms-1 bi bi-arrow-repeat"></i>
               </button>
             </div>
           </div>

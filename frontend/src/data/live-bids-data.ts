@@ -1,7 +1,7 @@
 const live_bids_data = [
   {
     id: 1,
-    title: 'Fancy Car',
+    title: 'Flex Box',
     image: '/assets/img/bg-img/9.jpg',
     bidEndsTime: 'Jun 31, 2022 14:19:54',
     currentPrice: '.78 ETH',

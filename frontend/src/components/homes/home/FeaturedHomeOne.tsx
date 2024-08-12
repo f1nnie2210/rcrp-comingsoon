@@ -174,30 +174,30 @@ const FeaturedHomeOne = () => {
                           <div className="row gx-2 align-items-center mt-2">
                             <div className="col-8">
                               <div className="name-info d-flex align-items-center">
-                                <div className="author-img position-relative">
+                                {/* <div className="author-img position-relative">
                                   <img
                                     className="shadow"
                                     src={item.authorAvater}
                                     alt=""
                                   />
                                   <i className="bi bi-check position-absolute bg-success"></i>
-                                </div>
+                                </div> */}
                                 <div className="name-author">
-                                  {/* <Link
+                                  {<Link
                                     className="name d-block hover-primary fw-bold text-truncate"
-                                    href="/item-details"
+                                    href="#"
                                     data-bs-toggle="tooltip"
                                     data-bs-placement="top"
-                                    title="Cowboy Riding Bull Nature"
+                                    // title="Cowboy Riding Bull Nature"
                                   >
                                     {item.title}
-                                  </Link> */}
-                                  {/* <Link
+                                  </Link> }
+                                  {/* { <Link
                                     className="author d-block fz-12 hover-primary text-truncate"
                                     href="/author"
                                   >
                                     @{item.authorName}
-                                  </Link> */}
+                                  </Link> } */}
                                 </div>
                               </div>
                             </div>
