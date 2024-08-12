@@ -258,7 +258,7 @@ const DashboardHeader = () => {
                   <span className="counter">
                     <Count number={balanceCard[0].balance} />
                   </span>
-                  <span className="ms-2">{balanceCard[0].balanceType}</span>
+                  {/* <span className="ms-2">{balanceCard[0].balanceType}</span> */}
                 </h5>
 
                 {/* Recharge Button */}
