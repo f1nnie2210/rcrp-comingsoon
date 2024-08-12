@@ -29,13 +29,13 @@ const Dashboard = () => {
         <div className="container">
           <div className="row g-4">
             <DashboardHeroCard />
-            <DashboardStatisticsChart />
-            <DashboardActivityTab />
+            {/* <DashboardStatisticsChart /> */}
+            {/* <DashboardActivityTab /> */}
             <DashboardTrendingAuction />
-            <DashboardFeaturedCard />
+            {/* <DashboardFeaturedCard />
             <DashboardPriceHistory />
             <DashboardTodaysPick />
-            <DashboardTopAuthorBuyer />
+            <DashboardTopAuthorBuyer /> */}
           </div>
         </div>
       </div>

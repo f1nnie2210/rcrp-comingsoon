@@ -31,7 +31,7 @@ const LiveAuctionHomeOne = ({ style_2 }: any) => {
                   <span className="visually-hidden">Loading...</span>
                 </div>
                 <h2 className="mb-0 ms-2">
-                  Đang {style_2 ? 'Bid' : 'Giảm Giá'}
+                  Blindbox {style_2 ? 'Bid' : '& Gacha'}
                 </h2>
               </div>
             </div>
@@ -40,7 +40,7 @@ const LiveAuctionHomeOne = ({ style_2 }: any) => {
                 className="btn rounded-pill btn-outline-primary btn-sm border-2 mb-5"
                 href="/live-bidding"
               >
-                View All Auctions
+                Xem tất cả
               </Link>
             </div>
           </div>
@@ -162,7 +162,7 @@ const LiveAuctionHomeOne = ({ style_2 }: any) => {
                           className="btn btn-primary rounded-pill btn-sm mt-3 w-100"
                           href="#"
                         >
-                          Place Bid
+                          Mua Ngay
                         </a>
                       </div>
                     </div>

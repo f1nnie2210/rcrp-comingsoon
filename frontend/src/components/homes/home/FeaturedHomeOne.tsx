@@ -24,7 +24,7 @@ const FeaturedHomeOne = () => {
           <div className="row">
             <div className="col-12 col-sm-9 col-lg-6">
               <div className="section-heading">
-                <h2 className="mb-0">Lựa chọn tốt</h2>
+                <h2 className="mb-0">Phương Tiện</h2>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@ const FeaturedHomeOne = () => {
                                   <i className="bi bi-check position-absolute bg-success"></i>
                                 </div>
                                 <div className="name-author">
-                                  <Link
+                                  {/* <Link
                                     className="name d-block hover-primary fw-bold text-truncate"
                                     href="/item-details"
                                     data-bs-toggle="tooltip"
@@ -191,13 +191,13 @@ const FeaturedHomeOne = () => {
                                     title="Cowboy Riding Bull Nature"
                                   >
                                     {item.title}
-                                  </Link>
-                                  <Link
+                                  </Link> */}
+                                  {/* <Link
                                     className="author d-block fz-12 hover-primary text-truncate"
                                     href="/author"
                                   >
                                     @{item.authorName}
-                                  </Link>
+                                  </Link> */}
                                 </div>
                               </div>
                             </div>
@@ -226,9 +226,9 @@ const FeaturedHomeOne = () => {
                             <div className="col-6 text-end">
                               <Link
                                 className="btn btn-minimal btn-sm hover-primary"
-                                href="/activity"
+                                href="#"
                               >
-                                <i className="bi bi-activity me-1"></i>Activity
+                                <i className="bi bi-activity me-1"></i>Còn hàng
                               </Link>
                             </div>
                           </div>
