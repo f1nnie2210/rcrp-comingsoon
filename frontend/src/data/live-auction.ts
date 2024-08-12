@@ -38,9 +38,9 @@ const live_actions = [
         icon: 'bi-bag',
       },
     ],
-    authorName: 'designing_world',
-    authorAvater: '/assets/img/bg-img/u4.jpg',
-    authorVerified: 'true',
+    // authorName: 'designing_world',
+    // authorAvater: '/assets/img/bg-img/u4.jpg',
+    // authorVerified: 'true',
     buttonInfo: [
       {
         style: 'primary',
