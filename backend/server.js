@@ -3,7 +3,7 @@ const cors = require("cors");
 const sequelize = require('./config/db');
 const app = express();
 const authRoutes = require("./routes/authRoutes");
-const itemRoutes = require('./routes/itemRoutes');
+const webitemRoutes = require('./routes/webitemRoutes');
 const blindboxRoutes = require('./routes/blindboxRoutes');
 // const gachaRoutes = require('./routes/gachaRoutes');
 //const purchaseRoutes = require('./routes/purchaseRoutes');
@@ -15,14 +15,14 @@ require('./models');
 
 app.use(
     cors({
-        origin: "http://localhost:3000", // Update this to your frontend URL
+        origin: "http://localhost:3000", // Frontend URL
         credentials: true,
     })
 );
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
-app.use('/api/items', itemRoutes);
+app.use('/api/webitems', webitemRoutes);
 app.use('/api/blindboxes', blindboxRoutes);
 // app.use('/api/gachas', gachaRoutes);
 //app.use('/api/purchase', purchaseRoutes);

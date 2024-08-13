@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import menu_data from './MenuData'
+import { logout } from '@/utils/auth'
 
 const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
   const [navTitle, setNavTitle] = useState('')
@@ -19,15 +20,15 @@ const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
 
   // Retrieve username from localStorage
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    const token = localStorage.getItem('token')
+    if (token) {
       const storedUsername = localStorage.getItem('username')
       setUsername(storedUsername)
     }
   }, [])
 
   const handleLogout = () => {
-    localStorage.removeItem('token')
-    localStorage.removeItem('username')
+    logout()
     setUsername(null)
   }
 
@@ -114,7 +115,12 @@ const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i className="bi bi-three-dots"></i>
+              <i
+                className="bi bi-person"
+                style={{ display: 'inline-block', padding: '0 10px' }}
+              >
+                {username}
+              </i>{' '}
             </button>
             <ul
               className="dropdown-menu mt-3"
@@ -125,16 +131,16 @@ const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
                   <i className="me-2 bi bi-speedometer2"></i>Dashboard
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link className="dropdown-item" href="/my-collection">
                   <i className="me-2 bi bi-collection"></i>Collections
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link className="dropdown-item" href="/notifications">
                   <i className="me-2 bi bi-bell"></i>Notifications
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link className="dropdown-item" href="/settings">
                   <i className="me-2 bi bi-gear"></i>Settings
