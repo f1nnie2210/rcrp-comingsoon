@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import UseSticky from '@/hooks/UseSticky'
@@ -5,7 +6,7 @@ import Link from 'next/link'
 import NavMenu from './NavMenu'
 import MobileMenus from './mobile-menus'
 import React, { useCallback, useEffect, useState } from 'react'
-import { getRoleFromToken, refreshToken, logout } from '@/utils/auth'
+import { logout } from '@/utils/auth'
 
 import light_logo from '/assets/img/core-img/logo.png'
 import dark_logo from '/assets/img/core-img/logo-white.png'
@@ -118,7 +119,12 @@ const HeaderOne = () => {
                       type="button"
                       aria-expanded={userActive ? 'true' : 'false'}
                     >
-                      {username}
+                      <i
+                        className="bi bi-person"
+                        style={{ display: 'inline-block', padding: '0 10px' }}
+                      >
+                        {username}
+                      </i>{' '}
                     </button>
                     <ul
                       className={`dropdown-menu mt-3 ${

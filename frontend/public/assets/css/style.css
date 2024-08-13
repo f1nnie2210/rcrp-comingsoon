@@ -1112,8 +1112,8 @@ table {
   z-index: 10;
 }
 .header-area .header-meta .user-dropdown .user-btn {
-  padding: 5;
-  font-size: 1.1rem;
+  padding: 10;
+  font-size: 1rem;
   color: #1f0757;
   width: auto;
   height: 40px;

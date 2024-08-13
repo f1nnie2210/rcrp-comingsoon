@@ -230,14 +230,7 @@ const FooterOne = () => {
           <div className="copywrite-wrapper d-lg-flex align-items-lg-center justify-content-lg-between">
             <div className="copywrite-text text-center text-lg-start mb-3 mb-lg-0">
               <p className="mb-0">
-                {new Date().getFullYear()} &copy; All rights reserved by{' '}
-                <a
-                  href="https://themeforest.net/user/rk_theme/portfolio"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  RC:RP
-                </a>
+                {new Date().getFullYear()} &copy; All rights reserved by{' RCRP '}
               </p>
             </div>
 
