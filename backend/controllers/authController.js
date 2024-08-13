@@ -1,14 +1,12 @@
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const User = require("../models/User");
-require("dotenv").config();
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
+const User = require('../models/User');
 
 exports.login = async (req, res) => {
-    const { Username, Password } = req.body;
-
     try {
-        console.log("Finding user with username:", Username);
+        const { Username, Password } = req.body;
         const user = await User.findOne({ where: { Username } });
+
         if (!user) {
             console.log("User not found");
             return res.status(400).send("Invalid username or password.");
@@ -21,7 +19,7 @@ exports.login = async (req, res) => {
         }
 
         const token = jwt.sign(
-            { ID: user.ID, Admin: user.Admin },
+            { ID: user.ID, Admin: user.Admin, Role: user.Role },
             process.env.JWT_SECRET,
             { expiresIn: "1h" }
         );
@@ -31,14 +29,27 @@ exports.login = async (req, res) => {
     }
 };
 
+exports.refreshToken = async (req, res) => {
+    try {
+        const { token } = req.body;
+        const decoded = jwt.verify(token, process.env.JWT_SECRET, { ignoreExpiration: true });
+
+        const newToken = jwt.sign(
+            { ID: decoded.ID, Admin: decoded.Admin, Role: decoded.Role },
+            process.env.JWT_SECRET,
+            { expiresIn: "1h" }
+        );
+        res.send({ token: newToken });
+    } catch (err) {
+        res.status(400).send("Invalid token.");
+    }
+};
+
 exports.getUserInfo = async (req, res) => {
     try {
         const user = await User.findByPk(req.user.ID, {
             attributes: ['Username', 'Admin']
         });
-        if (!user) {
-            return res.status(404).send("User not found.");
-        }
         res.send(user);
     } catch (err) {
         res.status(500).send("Server error.");
