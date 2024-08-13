@@ -1,14 +1,14 @@
 import Dashboard from '@/components/dashboard/dashboard'
-import AuthProtectedRoute from '@/components/hoc/AuthProtectedRoute'
+import WithAuth from '@/components/hoc/withAuth' 
 export const metadata = {
   title: 'RC:RP Dashboard - Openmp Việt Nam',
 }
 
 const index = () => {
   return (
-    <AuthProtectedRoute>
+    <WithAuth>
       <Dashboard />
-    </AuthProtectedRoute>
+    </WithAuth>
   )
 }
 

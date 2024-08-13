@@ -1,8 +1,9 @@
 'use client'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import axios from 'axios'
 import { useRouter } from 'next/navigation'
+import { setToken } from '../../utils/tokenStorage';
+import axiosInstance from '../../utils/axiosInstance';
 
 const LoginArea = () => {
   const [passwordVisible, setPasswordVisible] = useState(false)
@@ -16,25 +17,21 @@ const LoginArea = () => {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
-      const response = await axios.post(
-        'http://localhost:5000/api/auth/login',
-        {
-          Username: username,
-          Password: password,
-        },
-        { withCredentials: true },
-      )
+      const response = await axiosInstance.post('/auth/login', {
+        Username: username,
+        Password: password,
+      });
       if (response.data.token) {
-        localStorage.setItem('token', response.data.token)
-        localStorage.setItem('username', username)
-        router.push('/')
+        setToken(response.data.token);
+        localStorage.setItem('username', username);
+        router.push('/');
       }
     } catch (err) {
-      setError('Invalid username or password.')
+      setError('Invalid username or password.');
     }
-  }
+  };
 
   return (
     <>
