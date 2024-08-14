@@ -1,57 +1,64 @@
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
-const User = require('../models/User');
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
+const User = require("../models/User");
 
-exports.login = async (req, res) => {
-    try {
-        const { Username, Password } = req.body;
-        const user = await User.findOne({ where: { Username } });
+require("dotenv").config();
 
-        if (!user) {
-            console.log("User not found");
-            return res.status(400).send("Invalid username or password.");
-        }
-
-        const validPassword = await bcrypt.compare(Password, user.Password);
-        if (!validPassword) {
-            console.log("Invalid password");
-            return res.status(400).send("Invalid username or password.");
-        }
-
-        const token = jwt.sign(
-            { ID: user.ID, Admin: user.Admin, Role: user.Role },
-            process.env.JWT_SECRET,
-            { expiresIn: "1h" }
-        );
-        res.send({ token, isAdmin: user.Admin > 0 });
-    } catch (err) {
-        res.status(500).send("Server error.");
-    }
+const generateAccessToken = (user) => {
+    return jwt.sign(
+        { ID: user.ID, Admin: user.Admin },
+        process.env.JWT_SECRET,
+        { expiresIn: process.env.JWT_ACCESS_EXPIRATION }
+    );
 };
 
-exports.refreshToken = async (req, res) => {
-    try {
-        const { token } = req.body;
-        const decoded = jwt.verify(token, process.env.JWT_SECRET, { ignoreExpiration: true });
-
-        const newToken = jwt.sign(
-            { ID: decoded.ID, Admin: decoded.Admin, Role: decoded.Role },
-            process.env.JWT_SECRET,
-            { expiresIn: "1h" }
-        );
-        res.send({ token: newToken });
-    } catch (err) {
-        res.status(400).send("Invalid token.");
-    }
+const generateRefreshToken = (user) => {
+    return jwt.sign({ ID: user.ID }, process.env.JWT_REFRESH_SECRET, {
+        expiresIn: process.env.JWT_REFRESH_EXPIRATION,
+    });
 };
 
-exports.getUserInfo = async (req, res) => {
-    try {
-        const user = await User.findByPk(req.user.ID, {
-            attributes: ['Username', 'Admin']
-        });
-        res.send(user);
-    } catch (err) {
-        res.status(500).send("Server error.");
+const login = async (req, res) => {
+    const { Username, Password } = req.body;
+    const user = await User.findOne({ where: { Username } });
+
+    if (!user) {
+        return res.status(401).json({ message: "Invalid credentials" });
     }
+
+    const validPassword = await bcrypt.compare(Password, user.Password);
+    if (!validPassword) {
+        return res.status(401).json({ message: "Invalid credentials" });
+    }
+
+    const accessToken = generateAccessToken(user);
+    const refreshToken = generateRefreshToken(user);
+
+    res.cookie("refreshToken", refreshToken, { httpOnly: true, secure: true });
+    res.json({ accessToken });
+    console.log({refreshToken});
+};
+
+const refreshToken = (req, res) => {
+    const { refreshToken } = req.cookies;
+
+    if (!refreshToken) {
+        return res.status(401).json({ message: "No refresh token provided" });
+    }
+
+    jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET, (err, user) => {
+        if (err) {
+            return res.status(403).json({ message: "Invalid refresh token" });
+        }
+
+        const newAccessToken = generateAccessToken(user);
+        res.json({ accessToken: newAccessToken });
+    });
+};
+
+module.exports = {
+    generateAccessToken,
+    generateRefreshToken,
+    login,
+    refreshToken,
 };
