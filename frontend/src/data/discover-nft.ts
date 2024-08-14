@@ -1,7 +1,7 @@
 const discover_data = [
   {
     id: 1,
-    title: 'Monkey Arts #114',
+    title: 'Benson',
     image: '/assets/img/bg-img/13.jpg',
     catagory: 'cards',
     currentPrice: '0.861 ETH',
@@ -110,7 +110,7 @@ const discover_data = [
   },
   {
     id: 2,
-    title: "Two Monkey's Fun",
+    title: "DFT 30",
     image: '/assets/img/bg-img/14.jpg',
     catagory: 'cards',
     currentPrice: '2.961 ETH',

@@ -50,14 +50,14 @@ const DiscoverHomeOne = () => {
           <div className="row align-items-center">
             <div className="col-12 col-md-4">
               <div className="section-heading">
-                <h2 className="mb-0">Discover</h2>
+                <h2 className="mb-0">Truck & Container</h2>
               </div>
             </div>
             <div className="col-12 col-md-8">
               <div className="filters-button-group d-flex justify-content-md-end flex-wrap">
                 {categories.map((cate, i) => (
                   <React.Fragment key={i}>
-                    <button
+                    {/* <button
                       onClick={() => filterItems(cate)}
                       className={`btn btn-primary rounded-pill btn-sm mb-3 mx-2 ${cate === activeCategory ? 'active' : ''}`}
                     >
@@ -78,7 +78,7 @@ const DiscoverHomeOne = () => {
                       )}
 
                       {cate}
-                    </button>{' '}
+                    </button>{' '} */}
                   </React.Fragment>
                 ))}
               </div>
@@ -171,30 +171,30 @@ const DiscoverHomeOne = () => {
                         <div className="row gx-2 align-items-center mt-2">
                           <div className="col-8">
                             <div className="name-info d-flex align-items-center">
-                              <div className="author-img position-relative">
+                              {/* <div className="author-img position-relative">
                                 <img
                                   className="shadow"
                                   src={item.authorAvater}
                                   alt=""
                                 />
                                 <i className="bi bi-check position-absolute bg-success"></i>
-                              </div>
+                              </div> */}
                               <div className="name-author">
                                 <Link
                                   className="name d-block hover-primary fw-bold text-truncate"
-                                  href="/item-details"
+                                  href=""
                                   data-bs-toggle="tooltip"
                                   data-bs-placement="top"
-                                  title="Monkey Arts #114"
+                                  title=""
                                 >
                                   {item.title}
                                 </Link>
-                                <Link
+                                {/* <Link
                                   className="author d-block fz-12 hover-primary text-truncate"
                                   href="/author"
                                 >
                                   @ {item.authorName}
-                                </Link>
+                                </Link> */}
                               </div>
                             </div>
                           </div>
