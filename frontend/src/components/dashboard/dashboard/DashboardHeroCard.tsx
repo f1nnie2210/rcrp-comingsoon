@@ -52,7 +52,7 @@ const DashboardHeroCard = () => {
                 <div className="d-flex align-items-center justify-content-between">
                   <div>
                     <h5 className="mb-2">Quy Đổi</h5>
-                    <span style={{ color: '#8084AE' }}>100.000 SAD = 1 RC</span>
+                    <span style={{ color: '#8084AE' }}>40.000 SAD = 1 RC</span>
                   </div>
                   <div className="ms-auto" id="chart-2"></div>
                 </div>

@@ -90,7 +90,7 @@ const LiveBiddingArea = () => {
 
                       <div
                         className="bid-ends"
-                        data-date="April 31, 2024 14:19:54"
+                        data-date="August 31, 2024 14:19:49"
                       >
                         <div>
                           <span className="days"></span>
