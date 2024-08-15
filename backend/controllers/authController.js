@@ -34,14 +34,17 @@ const login = async (req, res) => {
     const accessToken = generateAccessToken(user);
     const refreshToken = generateRefreshToken(user);
 
-    res.cookie("refreshToken", refreshToken, { httpOnly: true, secure: true });
-    res.json({ accessToken });
-    console.log({refreshToken});
+    res.cookie("refreshToken", refreshToken, {
+        httpOnly: true,
+        secure: false,
+        path: "/",
+        sameSite: "strict",
+    });
+    res.status(200).json({ accessToken });
 };
 
 const refreshToken = (req, res) => {
-    const { refreshToken } = req.cookies;
-
+    const refreshToken = req.cookies.refreshToken;
     if (!refreshToken) {
         return res.status(401).json({ message: "No refresh token provided" });
     }
@@ -52,13 +55,19 @@ const refreshToken = (req, res) => {
         }
 
         const newAccessToken = generateAccessToken(user);
-        res.json({ accessToken: newAccessToken });
+        res.status(200).json({ accessToken: newAccessToken });
     });
+};
+
+const userLogout = (req, res) => {
+    res.clearCookie("refreshToken");
+    res.status(200).json({ message: "Logged out" });
 };
 
 module.exports = {
     generateAccessToken,
     generateRefreshToken,
-    login,
     refreshToken,
+    login,
+    userLogout,
 };

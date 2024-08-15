@@ -13,7 +13,7 @@ const authMiddleware = {
             req.user = decoded;
             next();
         } catch (err) {
-            res.status(401).json({ error: "You're not authenticated" });
+            res.status(401).json({ error: "Your token is not valid" });
         }
     },
 };
