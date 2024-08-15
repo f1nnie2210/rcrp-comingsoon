@@ -9,7 +9,7 @@ const Collections = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title="Collections" subtitle="Collections" />
+      <Breadcrumb title="Truck & Container" subtitle="Truck & Container" />
       <Divider />
       <CollectionsArea />
       <Divider />
