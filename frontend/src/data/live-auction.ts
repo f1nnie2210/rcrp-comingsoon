@@ -194,7 +194,7 @@ const live_actions = [
   {
     id: 3,
     title: 'Toys Blindbox',
-    image: '/assets/img/bg-img/Toysblindbox.jpg',
+    image: '/assets/img/bg-img/Blindboxskin.png',
     bidEndsTime: 'May 26, 2023 06:32:41',
     currentPrice: '0.784 ETH',
     priceText: 'Giá Hiện Tại',
