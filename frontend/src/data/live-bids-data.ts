@@ -3,7 +3,7 @@ const live_bids_data = [
     id: 1,
     title: 'Flex Box',
     image: '/assets/img/bg-img/9.jpg',
-    bidEndsTime: 'Jun 31, 2022 14:19:54',
+    bidEndsTime: 'August 31, 2024 14:19:49',
     currentPrice: '.78 ETH',
     priceText: 'Giá Hiện Tại',
     badgeInfo: [

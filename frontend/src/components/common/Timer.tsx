@@ -4,7 +4,7 @@ import React from 'react'
 import { useTimer } from 'react-timer-hook'
 
 const Timer = () => {
-  const expiryTimestamp = new Date('2025-12-30')
+  const expiryTimestamp = new Date('2024-8-30')
   const { seconds, minutes, hours, days } = useTimer({ expiryTimestamp })
 
   return (
