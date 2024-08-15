@@ -24,6 +24,8 @@ const HomeOne = () => {
       <HeaderOne />
       <HeorAreaHomeOne />
       <Divider />
+      <ProcessHomeOne />
+      <Divider />      
       <FeaturedHomeOne />
       <Divider />
       {/* <TopSellerHomeOne /> */}
@@ -32,9 +34,7 @@ const HomeOne = () => {
       <Divider />
       <DiscoverHomeOne />
       <Divider />
-      <PopularCollectionHomeOne />
-      <Divider />
-      <ProcessHomeOne />
+      {/* <PopularCollectionHomeOne /> */}
       <Divider />
       {/* <CollectionHomeOne /> */}
       <Divider />
@@ -42,5 +42,7 @@ const HomeOne = () => {
     </>
   )
 }
+
+
 
 export default HomeOne
