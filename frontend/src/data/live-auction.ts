@@ -194,7 +194,7 @@ const live_actions = [
   {
     id: 3,
     title: 'Toys Blindbox',
-    image: '/assets/img/bg-img/11.jpg',
+    image: '/assets/img/bg-img/Toysblindbox.jpg',
     bidEndsTime: 'May 26, 2023 06:32:41',
     currentPrice: '0.784 ETH',
     priceText: 'Giá Hiện Tại',
@@ -243,47 +243,47 @@ const live_actions = [
     ],
     wishlistCount: '98',
     viewsNow: '795',
-    shortDesc: [
-      {
-        heading: 'Short Description',
-        body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?',
-      },
-    ],
+    // shortDesc: [
+    //   {
+    //     heading: 'Short Description',
+    //     body: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?',
+    //   },
+    // ],
     tabVisibility: '',
-    firstTabContent: [
-      '<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>',
-      '<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>',
-      '<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>',
-      "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>",
-    ],
-    secondTabContent: [
-      {
-        firstData: 'Halloween #471',
-        secondData: '0.235 ETH',
-        thirdData: 'creative_art',
-        fourthData: 'Sales',
-        fiveData: '1h ago',
-      },
-      {
-        firstData: 'Halloween #471',
-        secondData: '0.235 ETH',
-        thirdData: 'creative_art',
-        fourthData: 'Sales',
-        fiveData: '2h ago',
-      },
-      {
-        firstData: 'Halloween #471',
-        secondData: '0.235 ETH',
-        thirdData: 'creative_art',
-        fourthData: 'Sales',
-        fiveData: '3h ago',
-      },
-    ],
+    // firstTabContent: [
+    //   '<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>',
+    //   '<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>',
+    //   '<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>',
+    //   "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>",
+    // ],
+    // secondTabContent: [
+    //   {
+    //     firstData: 'Halloween #471',
+    //     secondData: '0.235 ETH',
+    //     thirdData: 'creative_art',
+    //     fourthData: 'Sales',
+    //     fiveData: '1h ago',
+    //   },
+    //   {
+    //     firstData: 'Halloween #471',
+    //     secondData: '0.235 ETH',
+    //     thirdData: 'creative_art',
+    //     fourthData: 'Sales',
+    //     fiveData: '2h ago',
+    //   },
+    //   {
+    //     firstData: 'Halloween #471',
+    //     secondData: '0.235 ETH',
+    //     thirdData: 'creative_art',
+    //     fourthData: 'Sales',
+    //     fiveData: '3h ago',
+    //   },
+    // ],
   },
   {
     id: 4,
     title: 'Gacha Box',
-    image: '/assets/img/bg-img/Gacha.jpg',
+    image: '/assets/img/bg-img/Gacha.png',
     bidEndsTime: 'Nov 22, 2022 00:00:15',
     currentPrice: '25 RC',
     priceText: 'Giá Hiện Tại',
