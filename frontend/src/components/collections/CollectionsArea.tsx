@@ -61,7 +61,7 @@ const CollectionsArea = () => {
                       </div>
                       <div className="col-4 text-end">
                         <a className="btn btn-minimal hover-primary" href="#">
-                          View all
+                          Xem tất cả
                           <i className="ms-1 fz-14 bi bi-arrow-right"></i>
                         </a>
                       </div>
