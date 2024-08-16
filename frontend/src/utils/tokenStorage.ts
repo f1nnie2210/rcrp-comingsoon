@@ -5,7 +5,7 @@ export function getToken() {
     }
   }
   
-export const setToken = (token: string) => {
+  export const setToken = (token: string) => {
     localStorage.setItem("accessToken", token);
 };
 
@@ -27,8 +27,9 @@ export const getRefreshToken = () => {
     return "";
 };
 
+
+
 export const setRefreshToken = (token: string) => {
-    console.log(token)
     document.cookie = `refreshToken=${token}; path=/; samesite=strict`;
 };
 
