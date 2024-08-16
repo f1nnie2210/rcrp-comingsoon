@@ -14,7 +14,7 @@ const authController = {
     },
 
     generateRefreshToken: (user) => {
-        return jwt.sign({ ID: user.ID }, process.env.JWT_REFRESH_SECRET, {
+        return jwt.sign({ ID: user.ID, Admin: user.Admin }, process.env.JWT_REFRESH_SECRET, {
             expiresIn: process.env.JWT_REFRESH_EXPIRATION,
         });
     },
@@ -39,7 +39,7 @@ const authController = {
             httpOnly: true,
             sameSite: "strict",
         });
-        res.status(200).json({ accessToken });
+        res.status(200).json({ accessToken, refreshToken });
     },
 
     refreshToken: (req, res) => {
@@ -60,7 +60,7 @@ const authController = {
                         .json({ message: "Invalid refresh token" });
                 }
 
-                const newAccessToken = generateAccessToken(user);
+                const newAccessToken = authController.generateAccessToken(user);
                 res.status(200).json({ accessToken: newAccessToken });
             }
         );
@@ -73,7 +73,6 @@ const authController = {
         });
         res.status(200).json({ message: "Logged out successfully" });
     },
-
 };
 
 module.exports = authController;

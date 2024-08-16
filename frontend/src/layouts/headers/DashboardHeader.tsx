@@ -4,8 +4,7 @@ import Link from 'next/link'
 import UseSticky from '@/hooks/UseSticky'
 import React, { useState, useEffect } from 'react'
 import Count from '@/components/common/Count'
-import { refreshToken as refreshAccessToken } from '../../utils/auth';
-import { jwtDecode} from 'jwt-decode';
+import axiosInstance from '@/utils/axiosInstance'
 
 const balanceCard = [
   {
@@ -61,6 +60,31 @@ const DashboardHeader = () => {
   const [username, setUsername] = useState<string | null>(null)
   const [admin, setAdminLevel] = useState<string | null>(null)
 
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const response = await axiosInstance.get('/auth/user-info', {
+          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
+          },
+        })
+        const { Username, Admin } = response.data
+        setUsername(Username)
+        if (Admin === 0) {
+          setAdminLevel('User')
+        } else if (Admin >= 1 && Admin <= 8) {
+          setAdminLevel(`Admin ${Admin}`)
+        } else {
+          setAdminLevel('Unknown')
+        }
+      } catch (error) {
+        console.error('Error fetching user info:', error)
+      }
+    }
+
+    fetchUserInfo()
+  }, [])
 
   const handleToggle = () => {
     setActive(!isActive)
@@ -70,8 +94,6 @@ const DashboardHeader = () => {
   const handleUserToggle = () => {
     setUserActive(!userActive)
   }
-
-
 
   return (
     <>
@@ -114,7 +136,8 @@ const DashboardHeader = () => {
                 >
                   <li>
                     <a className="dropdown-item" href="#">
-                      <i className="me-2 bi bi-percent"></i>Chào mừng đến với RC:RP
+                      <i className="me-2 bi bi-percent"></i>Chào mừng đến với
+                      RC:RP
                     </a>
                   </li>
                   <li>
@@ -125,8 +148,8 @@ const DashboardHeader = () => {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      <i className="bg-danger me-2 bi bi-gift"></i>Sở hữu ngay những vật phẩm đặc biệt
-                      bằng cách đổi RC hoặc mua RC nhé.
+                      <i className="bg-danger me-2 bi bi-gift"></i>Sở hữu ngay
+                      những vật phẩm đặc biệt bằng cách đổi RC hoặc mua RC nhé.
                     </a>
                   </li>
                   <li>
@@ -215,12 +238,8 @@ const DashboardHeader = () => {
               <div className="d-flex align-items-center">
                 <img src="/assets/img/bg-img/u2.png" alt="" />
                 <div className="ms-3">
-                  <h6 className="lh-1 text-dark fz-18">
-                  {username}
-                  </h6>
-                  <span className="badge bg-primary fz-12">
-                  {admin}
-                  </span>
+                  <h6 className="lh-1 text-dark fz-18">{username}</h6>
+                  <span className="badge bg-primary fz-12">{admin}</span>
                 </div>
               </div>
             </div>

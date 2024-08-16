@@ -13,6 +13,7 @@ export const login = async (
     const response = await axiosInstance.post("/auth/login", {
       Username: userInputs.username,
       Password: userInputs.password,
+      withCredentials: true,
     });
 
     const { data } = response;

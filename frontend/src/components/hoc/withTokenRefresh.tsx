@@ -1,30 +1,37 @@
 'use client'
-import React, { useEffect, ReactNode } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { getToken, getRefreshToken, setToken, removeToken, removeRefreshToken } from '@/utils/tokenStorage';
+import { getToken, setToken, removeToken } from '@/utils/tokenStorage';
 import { refreshAccessToken } from '@/utils/auth';
+import { Spinner } from '@nextui-org/spinner';
 
-interface WithTokenRefreshProps {
-    children: ReactNode;
-  }
-    const WithTokenRefresh = ({ children }: WithTokenRefreshProps) => {
-        const router = useRouter();
-    
-        useEffect(() => {
-            const checkAccessToken = async () => {
-                try {
-                    const token = getToken();
-                    if (!token) {
-                        await refreshAccessToken();
-                    }
-                } catch (error) {
-                    router.push('/login');
-                }
-            };
-    
-            checkAccessToken();
-        }, [router]);
-    
-        return <>{children}</>;
+const WithTokenRefresh: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const router = useRouter();
+  const [isTokenChecked, setIsTokenChecked] = useState(false);
+
+  useEffect(() => {
+    const checkToken = async () => {
+      const token = getToken();
+      if (!token) {
+        try {
+          const data = await refreshAccessToken();
+          setToken(data.accessToken);
+        } catch (error) {
+          removeToken();
+          router.push('/login');
+        }
+      }
+      setIsTokenChecked(true);
     };
+
+    checkToken();
+  }, [router]);
+
+  if (!isTokenChecked) {
+    return <Spinner>Loading...</Spinner>; 
+  }
+
+  return <>{children}</>;
+};
+
 export default WithTokenRefresh;
