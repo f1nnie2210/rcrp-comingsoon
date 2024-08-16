@@ -1,10 +1,10 @@
 const User = require("../models/User");
 
 const userController = {
-    getUsersInfo: async (req, res) => {
+    getUserInfo: async (req, res) => {
         try {
             const user = await User.findByPk(req.user.ID, {
-                attributes: ["Username", "Admin"],
+                attributes: ['Username', 'Admin']
             });
             res.send(user);
         } catch (err) {

@@ -1,36 +1,31 @@
 'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
-import { useRouter } from 'next/navigation'
-import { setToken } from '../../utils/tokenStorage';
-import axiosInstance from '../../utils/axiosInstance';
+import React, { useEffect, useState } from 'react'
+import axiosInstance from '@/utils/axiosInstance';
+import { setCookie } from 'cookies-next';
+import { useRouter } from "next/navigation";
+import { login } from '@/utils/login';
+
 
 const LoginArea = () => {
   const [passwordVisible, setPasswordVisible] = useState(false)
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+  const [userInput, setUserInput] = useState<TUserInputs>({ username: "", password: "" });
   const [error, setError] = useState('')
-  const router = useRouter()
+  const router = useRouter();
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    const { name, value } = e.target;
+    setUserInput({ ...userInput, [name]: value });
+  };
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible)
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    try {
-      const response = await axiosInstance.post('/auth/login', {
-        Username: username,
-        Password: password,
-      });
-      if (response.data.token) {
-        setToken(response.data.token);
-        localStorage.setItem('username', username);
-        router.push('/');
-      }
-    } catch (err) {
-      setError('Invalid username or password.');
-    }
+    setError(''); // Clear previous error
+    await login(userInput, setUserInput, setError, router);
   };
 
   return (
@@ -54,9 +49,10 @@ const LoginArea = () => {
                       <input
                         className="form-control"
                         type="text"
+                        name="username"
                         placeholder="Username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
+                        value={userInput.username}
+                        onChange={handleInputChange}
                         required
                       />
                     </div>
@@ -71,10 +67,11 @@ const LoginArea = () => {
                       <input
                         className="form-control"
                         id="registerPassword"
+                        name="password"
                         type={passwordVisible ? 'text' : 'password'}
                         placeholder="Mật khẩu"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        value={userInput.password}
+                        onChange={handleInputChange}
                         required
                       />
                     </div>

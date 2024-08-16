@@ -2,11 +2,15 @@
 
 import NiceSelect from '@/ui/NiceSelect'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router';
 
 const CreateNewArea = () => {
   const selectHandler = (e: any) => {}
+  const [isAuthorized, setIsAuthorized] = useState(false);
+  const router = useRouter();
 
+  
   return (
     <>
       <div className="create-new-wrapper">
@@ -14,7 +18,7 @@ const CreateNewArea = () => {
           <div className="row g-5 justify-content-center">
             <div className="col-12 col-lg-8">
               <div className="create-new-form border shadow-sm p-4 p-sm-5">
-                <h2 className="mb-4">Create new NFT</h2>
+                <h2 className="mb-4">Create new item</h2>
                 <form action="#">
                   <div className="row align-items-center">
                     <div className="col-12">

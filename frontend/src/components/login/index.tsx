@@ -5,6 +5,7 @@ import Divider from '../common/Divider'
 import FooterOne from '@/layouts/footers/FooterOne'
 import LoginArea from './LoginArea'
 
+
 const Login = () => {
   return (
     <>

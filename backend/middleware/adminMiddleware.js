@@ -14,7 +14,6 @@ const adminMiddleware = async (req, res, next) => {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
     const user = await User.findByPk(decoded.ID);
-    console.log('User found:', user);
 
     if (!user || user.Admin <= 0) {
       return res.status(403).json({ error: 'Access denied' });

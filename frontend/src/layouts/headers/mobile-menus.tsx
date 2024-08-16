@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import menu_data from './MenuData'
-import { logout } from '@/utils/auth'
+import { jwtDecode } from 'jwt-decode';
 
 const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
   const [navTitle, setNavTitle] = useState('')
@@ -18,19 +18,10 @@ const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
     setNavTitle2(navTitle2 === menu ? '' : menu)
   }
 
-  // Retrieve username from localStorage
-  useEffect(() => {
-    const token = localStorage.getItem('token')
-    if (token) {
-      const storedUsername = localStorage.getItem('username')
-      setUsername(storedUsername)
-    }
-  }, [])
 
   const handleLogout = () => {
-    logout()
-    setUsername(null)
-  }
+    setUsername(null);
+  };
 
   return (
     <div
