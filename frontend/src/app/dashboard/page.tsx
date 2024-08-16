@@ -1,5 +1,5 @@
 import Dashboard from '@/components/dashboard/dashboard'
-import WithTokenRefresh from '@/components/hoc/withTokenRefresh';
+import WithAuth from '@/components/hoc/withAuth'
 
 export const metadata = {
   title: 'RC:RP Dashboard - Openmp Việt Nam',
@@ -7,9 +7,9 @@ export const metadata = {
 
 const index = () => {
   return (
-    <WithTokenRefresh>
-      <Dashboard />
-    </WithTokenRefresh>
+    <>
+        <Dashboard />
+    </>
   )
 }
 

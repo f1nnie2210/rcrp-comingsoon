@@ -3,13 +3,10 @@
 
 import NiceSelect from '@/ui/NiceSelect'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import { useRouter } from 'next/router';
+import React from 'react'
 
 const CreateNewArea = () => {
   const selectHandler = (e: any) => {}
-  const [isAuthorized, setIsAuthorized] = useState(false);
-  const router = useRouter();
 
   
   return (
