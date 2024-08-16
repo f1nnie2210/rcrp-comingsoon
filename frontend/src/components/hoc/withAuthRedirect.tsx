@@ -2,6 +2,7 @@
 import React, { useEffect, ReactNode } from 'react';
 import { useRouter } from 'next/navigation';
 import { getToken } from '@/utils/tokenStorage';
+import { Spinner } from '@nextui-org/spinner';
 
 interface WithAuthRedirectProps {
   children: ReactNode;
@@ -13,13 +14,13 @@ const WithAuthRedirect = ({ children }: WithAuthRedirectProps) => {
   useEffect(() => {
     const token = getToken();
     if (token) {
-      router.replace('/'); // Redirect to home page if already logged in
+      router.replace('/'); 
     }
   }, [router]);
 
   const token = getToken();
   if (token) {
-    return null; // Render nothing while checking authentication
+    return <Spinner>Loading...</Spinner>; 
   }
 
   return <>{children}</>;

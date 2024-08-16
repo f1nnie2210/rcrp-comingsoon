@@ -1,6 +1,7 @@
 import CreateNew from '@/components/create-new'
 import React from 'react'
-import WithAdminAuth from '@/components/hoc/withAdminAuth';
+import WithAdminLevel from '@/components/hoc/withAdminAuth';
+import WithAuth from '@/components/hoc/withAuth';
 
 export const metadata = {
   title: 'RC:RP Create New - Openmp Việt Nam',
@@ -8,9 +9,11 @@ export const metadata = {
 
 const index = () => {
   return (
-    <WithAdminAuth>
+    <WithAuth>
+    <WithAdminLevel requiredLevel={8}>
       <CreateNew />
-    </WithAdminAuth>
+    </WithAdminLevel>
+  </WithAuth>
   )
 }
 

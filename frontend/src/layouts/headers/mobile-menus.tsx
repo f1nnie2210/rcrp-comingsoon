@@ -23,6 +23,11 @@ const MobileMenus = ({ setOpenMenu, openMenu }: any) => {
     setUsername(null);
   };
 
+  useEffect(() => {
+    const storedUsername = localStorage.getItem('username');
+    setUsername(storedUsername);
+  }, []);
+  
   return (
     <div
       className={`navbar-collapse collapse ${openMenu ? 'show' : ''}`}

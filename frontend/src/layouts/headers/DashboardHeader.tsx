@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import Link from 'next/link'
@@ -5,6 +6,7 @@ import UseSticky from '@/hooks/UseSticky'
 import React, { useState, useEffect } from 'react'
 import Count from '@/components/common/Count'
 import axiosInstance from '@/utils/axiosInstance'
+
 
 const balanceCard = [
   {
@@ -60,6 +62,15 @@ const DashboardHeader = () => {
   const [username, setUsername] = useState<string | null>(null)
   const [admin, setAdminLevel] = useState<string | null>(null)
 
+  const handleToggle = () => {
+    setActive(!isActive)
+  }
+
+  const [userActive, setUserActive] = useState(false)
+  const handleUserToggle = () => {
+    setUserActive(!userActive)
+  }
+
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
@@ -85,16 +96,7 @@ const DashboardHeader = () => {
 
     fetchUserInfo()
   }, [])
-
-  const handleToggle = () => {
-    setActive(!isActive)
-  }
-
-  const [userActive, setUserActive] = useState(false)
-  const handleUserToggle = () => {
-    setUserActive(!userActive)
-  }
-
+  
   return (
     <>
       <header
@@ -136,8 +138,7 @@ const DashboardHeader = () => {
                 >
                   <li>
                     <a className="dropdown-item" href="#">
-                      <i className="me-2 bi bi-percent"></i>Chào mừng đến với
-                      RC:RP
+                      <i className="me-2 bi bi-percent"></i>Chào mừng đến với RC:RP
                     </a>
                   </li>
                   <li>
@@ -148,8 +149,8 @@ const DashboardHeader = () => {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      <i className="bg-danger me-2 bi bi-gift"></i>Sở hữu ngay
-                      những vật phẩm đặc biệt bằng cách đổi RC hoặc mua RC nhé.
+                      <i className="bg-danger me-2 bi bi-gift"></i>Sở hữu ngay những vật phẩm đặc biệt
+                      bằng cách đổi RC hoặc mua RC nhé.
                     </a>
                   </li>
                   <li>
@@ -238,8 +239,12 @@ const DashboardHeader = () => {
               <div className="d-flex align-items-center">
                 <img src="/assets/img/bg-img/u2.png" alt="" />
                 <div className="ms-3">
-                  <h6 className="lh-1 text-dark fz-18">{username}</h6>
-                  <span className="badge bg-primary fz-12">{admin}</span>
+                  <h6 className="lh-1 text-dark fz-18">
+                  {username}
+                  </h6>
+                  <span className="badge bg-primary fz-12">
+                  {admin}
+                  </span>
                 </div>
               </div>
             </div>
