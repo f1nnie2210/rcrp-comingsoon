@@ -1,6 +1,7 @@
 import Login from '@/components/login'
 import React from 'react'
-import RedirectIfAuthenticated from '@/components/hoc/RedirectIfAuthenticated'
+import WithTokenRefresh from '@/components/hoc/withTokenRefresh'
+import WithAuthRedirect from '@/components/hoc/withAuthRedirect'
 
 export const metadata = {
   title: 'RC:RP Login - Openmp Việt Nam',
@@ -8,9 +9,11 @@ export const metadata = {
 
 const index = () => {
   return (
-    <RedirectIfAuthenticated>
-      <Login />
-    </RedirectIfAuthenticated>
+    <WithAuthRedirect>
+      <>
+        <Login />
+      </>
+    </WithAuthRedirect>
   )
 }
 

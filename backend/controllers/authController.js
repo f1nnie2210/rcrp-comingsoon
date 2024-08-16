@@ -1,57 +1,79 @@
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
-const User = require('../models/User');
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
+const User = require("../models/User");
 
-exports.login = async (req, res) => {
-    try {
+require("dotenv").config();
+
+const authController = {
+    generateAccessToken: (user) => {
+        return jwt.sign(
+            { ID: user.ID, Admin: user.Admin },
+            process.env.JWT_SECRET,
+            { expiresIn: process.env.JWT_ACCESS_EXPIRATION }
+        );
+    },
+
+    generateRefreshToken: (user) => {
+        return jwt.sign({ ID: user.ID }, process.env.JWT_REFRESH_SECRET, {
+            expiresIn: process.env.JWT_REFRESH_EXPIRATION,
+        });
+    },
+
+    login: async (req, res) => {
         const { Username, Password } = req.body;
         const user = await User.findOne({ where: { Username } });
 
         if (!user) {
-            console.log("User not found");
-            return res.status(400).send("Invalid username or password.");
+            return res.status(401).json({ message: "Invalid credentials" });
         }
 
         const validPassword = await bcrypt.compare(Password, user.Password);
         if (!validPassword) {
-            console.log("Invalid password");
-            return res.status(400).send("Invalid username or password.");
+            return res.status(401).json({ message: "Invalid credentials" });
         }
 
-        const token = jwt.sign(
-            { ID: user.ID, Admin: user.Admin, Role: user.Role },
-            process.env.JWT_SECRET,
-            { expiresIn: "1h" }
-        );
-        res.send({ token, isAdmin: user.Admin > 0 });
-    } catch (err) {
-        res.status(500).send("Server error.");
-    }
-};
+        const accessToken = authController.generateAccessToken(user);
+        const refreshToken = authController.generateRefreshToken(user);
 
-exports.refreshToken = async (req, res) => {
-    try {
-        const { token } = req.body;
-        const decoded = jwt.verify(token, process.env.JWT_SECRET, { ignoreExpiration: true });
-
-        const newToken = jwt.sign(
-            { ID: decoded.ID, Admin: decoded.Admin, Role: decoded.Role },
-            process.env.JWT_SECRET,
-            { expiresIn: "1h" }
-        );
-        res.send({ token: newToken });
-    } catch (err) {
-        res.status(400).send("Invalid token.");
-    }
-};
-
-exports.getUserInfo = async (req, res) => {
-    try {
-        const user = await User.findByPk(req.user.ID, {
-            attributes: ['Username', 'Admin']
+        res.cookie("refreshToken", refreshToken, {
+            httpOnly: true,
+            sameSite: "strict",
         });
-        res.send(user);
-    } catch (err) {
-        res.status(500).send("Server error.");
-    }
+        res.status(200).json({ accessToken });
+    },
+
+    refreshToken: (req, res) => {
+        const refreshToken = req.cookies.refreshToken;
+        if (!refreshToken) {
+            return res
+                .status(401)
+                .json({ message: "No refresh token provided" });
+        }
+
+        jwt.verify(
+            refreshToken,
+            process.env.JWT_REFRESH_SECRET,
+            (err, user) => {
+                if (err) {
+                    return res
+                        .status(403)
+                        .json({ message: "Invalid refresh token" });
+                }
+
+                const newAccessToken = generateAccessToken(user);
+                res.status(200).json({ accessToken: newAccessToken });
+            }
+        );
+    },
+
+    userLogout: (req, res) => {
+        res.cookie("refreshToken", "", {
+            httpOnly: true,
+            sameSite: "strict",
+        });
+        res.status(200).json({ message: "Logged out successfully" });
+    },
+
 };
+
+module.exports = authController;

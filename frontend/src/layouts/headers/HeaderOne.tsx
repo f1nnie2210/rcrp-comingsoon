@@ -6,7 +6,7 @@ import Link from 'next/link'
 import NavMenu from './NavMenu'
 import MobileMenus from './mobile-menus'
 import React, { useCallback, useEffect, useState } from 'react'
-import { logout } from '@/utils/auth'
+import { logout } from '@/utils/logout'
 
 import light_logo from '/assets/img/core-img/logo.png'
 import dark_logo from '/assets/img/core-img/logo-white.png'
@@ -35,23 +35,20 @@ const HeaderOne = () => {
     require('bootstrap/dist/js/bootstrap')
   }
 
-  useEffect(() => {
-    const token = localStorage.getItem('token')
-    if (token) {
-      const storedUsername = localStorage.getItem('username')
-      setUsername(storedUsername)
-    }
-  }, [])
-
   const handleLogout = () => {
     logout()
-    setUsername(null)
   }
+  
+  useEffect(() => {
+    const storedUsername = localStorage.getItem('username');
+    setUsername(storedUsername);
+  }, []);
 
   const handleUserToggle = () => {
     setUserActive(!userActive)
   }
 
+  
   return (
     <>
       <header

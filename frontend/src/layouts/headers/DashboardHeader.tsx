@@ -4,8 +4,8 @@ import Link from 'next/link'
 import UseSticky from '@/hooks/UseSticky'
 import React, { useState, useEffect } from 'react'
 import Count from '@/components/common/Count'
-import { refreshToken } from '@/utils/auth'
-import axiosInstance from '@/utils/axiosInstance'
+import { refreshToken as refreshAccessToken } from '../../utils/auth';
+import { jwtDecode} from 'jwt-decode';
 
 const balanceCard = [
   {
@@ -71,43 +71,7 @@ const DashboardHeader = () => {
     setUserActive(!userActive)
   }
 
-  useEffect(() => {
-    const fetchUserInfo = async () => {
-      try {
-        let token = localStorage.getItem('token')
-        if (!token) {
-          console.error('No token found')
-          return
-        }
 
-        // Refresh token if necessary
-        token = await refreshToken() || token
-
-        const response = await axiosInstance.get('/auth/user-info', {
-          withCredentials: true,
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        })
-
-        const { Username, Admin } = response.data
-        setUsername(Username)
-        localStorage.setItem('username', Username)
-
-        if (Admin === 0) {
-          setAdminLevel('User')
-        } else if (Admin >= 1 && Admin <= 8) {
-          setAdminLevel(`Admin ${Admin}`)
-        } else {
-          setAdminLevel('Unknown')
-        }
-      } catch (error) {
-        console.error('Error fetching user info:', error)
-      }
-    }
-
-    fetchUserInfo()
-  }, [])
 
   return (
     <>

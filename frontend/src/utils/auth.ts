@@ -1,32 +1,15 @@
-import axiosInstance from './axiosInstance';
-import { jwtDecode } from 'jwt-decode';
-import { removeToken } from './tokenStorage';
+import { toast } from "sonner";
+import axiosInstance from "./axiosInstance";
 
-export const getRoleFromToken = (token: string): string | null => {
+export const refreshAccessToken = async () => {
     try {
-        const decoded: any = jwtDecode(token);
-        return decoded.Role || null;
-    } catch (error) {
-        console.error('Failed to decode token:', error);
-        return null;
+        const response = await axiosInstance.get(`/auth/refresh-token`, {
+          withCredentials: true,
+        });
+        const { data } = response;
+        return data;
+      } catch (error: any) {
+        console.error(error);
+        toast.error(error?.response?.data?.error?.message);  
     }
 };
-
-export const refreshToken = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      const response = await axiosInstance.post('/auth/refresh-token', { token });
-      const { token: newToken } = response.data;
-      localStorage.setItem('token', newToken);
-      return newToken;
-    } catch (error) {
-      console.error('Failed to refresh token:', error);
-      return null;
-    }
-  };
-
-  export const logout = () => {
-    removeToken();
-    localStorage.removeItem('username');
-    window.location.href = '/login';
-  };
