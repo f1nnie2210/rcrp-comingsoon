@@ -1,14 +1,14 @@
+import ComingSoon from '@/components/home'
 import React from 'react'
-import HomeOne from '@/components/home'
 
 export const metadata = {
-  title: 'GTA:SA Red Commnunity Roleplay',
+  title: 'RC:RP Coming Soon - Openmp Việt Nam',
 }
 
 const index = () => {
   return (
     <>
-      <HomeOne />
+      <ComingSoon />
     </>
   )
 }
